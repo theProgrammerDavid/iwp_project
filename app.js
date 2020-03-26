@@ -1,12 +1,24 @@
+const express = require('express');
+const app = express();
+const path = require('path');
+const session = require('express-session');
+const bodyParser = require('body-parser');
 
-const express = require('express')
-const app = express()
 
-const port = 3000
+const port = 3000;
 
-app.get('/', (req, res) => res.send('Hello World!'))
 
-app.use('/api', require('./routes/api.js'));
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'hbs');
+
+app.use(session({ secret: 'someSecretKey', saveUninitialized: true, resave: true }));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
 app.use(express.static('static'))
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.get('/', (req, res) => {
+    //Serves the body of the page aka "main.handlebars" to the container //aka "index.handlebars"
+    res.render('main', { layout: 'layout/one' });
+});
+app.listen(port, () => console.log(`App listening to port ${port}`));
