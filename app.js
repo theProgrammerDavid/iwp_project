@@ -7,6 +7,7 @@ const bcrypt = require('bcrypt');
 
 const port = 3000;
 
+const loginRouter = require('./routes/loginRouter');
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
@@ -14,13 +15,19 @@ app.set('view engine', 'hbs');
 app.use(session({ secret: 'someSecretKey', saveUninitialized: true, resave: true }));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-router.use(bodyParser.urlencoded({ extended: false }));
-router.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 app.use(express.static('static'))
 
+app.use('/login', loginRouter);
+
+app.use('/signup', (req, res) => {
+
+});
+
 app.get('/', (req, res) => {
-    
-    res.render('login', { layout: 'layout/beforeSignIn' });
+    res.render('main');
+    // res.send('ok');
 });
 app.listen(port, () => console.log(`App listening to port ${port}`));
