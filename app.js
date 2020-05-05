@@ -18,8 +18,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.use(express.static('static'))
-
+app.use(express.static(__dirname + '/static'))
+console.log(__dirname);
 app.use('/login', loginRouter);
 
 app.use('/signup', (req, res) => {
