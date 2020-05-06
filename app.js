@@ -15,8 +15,7 @@ app.set('view engine', 'hbs');
 app.use(session({ secret: 'someSecretKey', saveUninitialized: true, resave: true }));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+
 
 app.use(express.static(__dirname + '/static'))
 console.log(__dirname);
