@@ -24,9 +24,15 @@ app.use(express.static(__dirname + '/static'))
 app.use('/login', loginRouter);
 app.use('/forgot', forgotPasswordRouter);
 app.use('/signup', signupRouter);
+app.get('/about', (req, res) => {
+    res.render('about', { layout: 'layout/beforeSignIn' });
+});
+app.get('/contact', (req, res) => {
+    res.render('contact', { layout: 'layout/beforeSignIn' });
+});
 
 app.get('/', (req, res) => {
-    res.render('main');
+    res.render('main', { layout: 'layout/beforeSignIn' });
     // res.send('ok');
 });
 app.listen(port, () => console.log(`App listening to port ${port}`));
