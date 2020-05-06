@@ -1,38 +1,23 @@
-<link rel="stylesheet" type="text/css" href="/css/main.css">
-
-<div class="header">
-    <a href="/" class="logo">CompanyLogo</a>
-
-    <div class="header-right">
-        <a class="active" href="/">Home</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-        <a class="login-button" href="/login">Login</a>
-    </div>
-</div>
-</div>
-
 <div class="login-page">
     <div class="form">
         <h2>SIGN UP</h2>
-    
+
         <form action="/login" method="post" class="login-form">
-
-
             <div class="container">
-                {{!-- <label for="uname"><b>Username</b></label> --}}
-                <input type="text" placeholder="Username" name="uname" required>
 
-                {{!-- <label for="psw"><b>Password</b></label> --}}
+                <input type="text" placeholder="Name" name="name" required>
+                <input type="text" placeholder="Phone Number" name="phoneNumber" required>
+                <input type="text" placeholder="Email address" name="email" required>
+
+                <input type="password" placeholder="Confirm Password" name="password" required>
                 <input type="password" placeholder="Password" name="password" required>
 
-                <button type="submit" id="loginButton">Login</button>
+                <button type="submit" id="loginButton">Sign Up</button>
 
             </div>
-            <br>
-            <span class="forgot-password"> <a href="/signup">Sign Up</a></span>
-            <br><br>
-            <span class="forgot-password"> <a href="#">Forgot password?</a></span>
+
         </form>
+        <br>
+        <span class="forgot-password"> <a href="/login">Back</a></span>
     </div>
 </div>

@@ -9,6 +9,7 @@ const port = 3000;
 
 const loginRouter = require('./routes/loginRouter');
 const signupRouter = require('./routes/signupRouter');
+const forgotPasswordRouter = require('./routes/forgotPassRouter')
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
@@ -19,9 +20,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 app.use(express.static(__dirname + '/static'))
-console.log(__dirname);
-app.use('/login', loginRouter);
 
+app.use('/login', loginRouter);
+app.use('/forgot', forgotPasswordRouter);
 app.use('/signup', signupRouter);
 
 app.get('/', (req, res) => {
