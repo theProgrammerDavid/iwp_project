@@ -1,9 +1,10 @@
 const express = require('express');
-const app = express();
 const path = require('path');
 const session = require('express-session');
 const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt');
+
+const app = express();
 
 const port = 3000;
 
