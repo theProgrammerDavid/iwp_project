@@ -8,6 +8,7 @@ const bcrypt = require('bcrypt');
 const port = 3000;
 
 const loginRouter = require('./routes/loginRouter');
+const signupRouter = require('./routes/signupRouter');
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
@@ -21,9 +22,7 @@ app.use(express.static(__dirname + '/static'))
 console.log(__dirname);
 app.use('/login', loginRouter);
 
-app.use('/signup', (req, res) => {
-
-});
+app.use('/signup', signupRouter);
 
 app.get('/', (req, res) => {
     res.render('main');
