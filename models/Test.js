@@ -8,12 +8,12 @@ const TestSchema = new Schema({
 			required: true,
 			select: true,
 		},
-		Tags: {
-			type: [String],
+		Description: {
+			type: String,
 			required: false,
 			select: true,
 		},
-		TestID: {
+		Testid: {
 			type: String,
 			required: true,
 			select: true,
@@ -28,15 +28,11 @@ const TestSchema = new Schema({
 			required: true,
 			select: true,
         },
-        Questions:{
-            type:[Question],
-            required: true,
-            select: true,
-        }
+       
 
 
 });
 
 
-module.exports = mongoose.model('Test', TestSchema);
+module.exports = mongoose.model('Tests', TestSchema);
 
