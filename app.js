@@ -12,6 +12,7 @@ const port = 3000;
 const Database = require('./util/database');
 const loginRouter = require('./routes/loginRouter');
 const signupRouter = require('./routes/signupRouter');
+const homepageRouter = require('./routes/homeRouter');
 const forgotPasswordRouter = require('./routes/forgotPassRouter')
 
 app.set('views', path.join(__dirname, 'views'));
@@ -27,6 +28,7 @@ app.use(express.static(__dirname + '/static'))
 app.use('/login', loginRouter);
 app.use('/forgot', forgotPasswordRouter);
 app.use('/signup', signupRouter);
+app.use('/home', homepageRouter);
 app.get('/about', (req, res) => {
     res.render('about', { layout: 'layout/beforeSignIn' });
 });
