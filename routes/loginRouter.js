@@ -3,7 +3,7 @@ const express = require('express')
 const bcrypt = require('bcrypt');
 const router = express.Router()
 const hashPassword = require('../util/hash')['hashPassword'];
- 
+const User = require('../models/User');
 
 
 router.get('/', (req, res) => {
@@ -11,11 +11,22 @@ router.get('/', (req, res) => {
 });
 
 
-router.post('/', async function(req, res){
+router.post('/', async function (req, res) {
+    console.log(req.body.password)
+    const _pass = await hashPassword(req.body.password);
+    // console.log(req.body)
+    const doc = await User.findOne({
+        name: req.body.name,
+    })
+ 
+    if (doc.password === _pass) {
+        console.log('correct')
+        res.redirect('home');
+        return;
+    }
+    res.send('invalid credentials');
 
-    // console.log(req.body.password);
-    console.log(await hashPassword(req.body.password));
-    res.send('ok');
+    // res.send('ok');
 
 });
 
