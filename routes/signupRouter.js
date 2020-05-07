@@ -27,7 +27,7 @@ router.post('/', async function (req, res) {
         console.log('Error creating new user\n' + err);
     })
     //console.log(await hashPassword(req.body.password));
-    res.send('signed up');
+    res.render('login', { layout: 'layout/beforeSignIn' });
 });
 
 module.exports = router;
