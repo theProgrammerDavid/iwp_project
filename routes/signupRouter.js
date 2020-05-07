@@ -19,7 +19,7 @@ router.post('/', async function (req, res) {
         name: req.body.name,
         email: req.body.email,
         phone: req.body.phoneNumber,
-        password: req.body.password
+        password: await hashPassword(req.body.password)
     });
     newUser.save().then(doc => {
         console.log('Created New User');
