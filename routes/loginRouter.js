@@ -16,16 +16,19 @@ router.post('/', async function (req, res) {
     const _pass = await hashPassword(req.body.password);
     // console.log(req.body)
     const doc = await User.findOne({
-        name: req.body.name,
+        email: req.body.email,
     })
- 
-    if (doc.password === _pass) {
-        console.log('correct')
-        res.redirect('home');
-        return;
-    }
-    res.send('invalid credentials');
 
+    if (doc) {
+        if (doc.password === _pass) {
+            console.log('correct')
+            // req.session.email = req.body.email;
+            res.redirect('home');
+
+        }
+
+    }
+    else { res.send('invalid credentials'); }
     // res.send('ok');
 
 });
