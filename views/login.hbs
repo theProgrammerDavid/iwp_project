@@ -1,18 +1,23 @@
 <div class="login-page">
     <div class="form">
         <h2>ONLINE PORTAL</h2>
-        {{!-- <form class="register-form" action="/">
-            <input type="text" placeholder="name" />
-            <input type="password" placeholder="password" />
-            <input type="text" placeholder="email address" />
-            <button>create</button>
-            <p class="message">Already registered? <a href="#">Sign In</a></p>
-        </form> --}}
-        <form class="login-form" action="/login" method="post">
-            <input type="text" placeholder="username" />
-            <input type="password" placeholder="password" />
-            <input type="submit" placeholder="Login" value="Login" id="loginButton">
-            <p class="message">Not registered? <a href="#">Create an account</a></p>
+        <form action="/login" method="post" class="login-form">
+
+
+            <div class="container">
+                {{!-- <label for="uname"><b>Username</b></label> --}}
+                <input type="text" placeholder="Email" name="email" required>
+
+                {{!-- <label for="psw"><b>Password</b></label> --}}
+                <input type="password" placeholder="Password" name="password" required>
+
+                <button type="submit" id="loginButton">Login</button>
+
+            </div>
+            <br>
+            <span class="forgot-password"> <a href="/signup">Sign Up</a></span>
+            <br><br>
+            <span class="forgot-password"> <a href="/forgot">Forgot password?</a></span>
         </form>
     </div>
 </div>
