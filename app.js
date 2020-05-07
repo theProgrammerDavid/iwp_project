@@ -3,11 +3,13 @@ const path = require('path');
 const session = require('express-session');
 const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt');
+const mongoose = require('mongoose');
 
 const app = express();
 
 const port = 3000;
 
+const Database = require('./util/database');
 const loginRouter = require('./routes/loginRouter');
 const signupRouter = require('./routes/signupRouter');
 const forgotPasswordRouter = require('./routes/forgotPassRouter')

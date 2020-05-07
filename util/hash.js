@@ -1,8 +1,8 @@
 const bcrypt = require('bcrypt');
 
-async function hashPassword(req) {
+async function hashPassword(pass) {
 
-    let password = req.body.password;
+    let password = pass;
     let saltRounds = 10;
 
     const hashedPassword = await new Promise((resolve, reject) => {
