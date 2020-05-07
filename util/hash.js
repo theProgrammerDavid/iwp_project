@@ -4,15 +4,11 @@ async function hashPassword(pass) {
 
     let password = pass;
     let saltRounds = 10;
-
-    const hashedPassword = await new Promise((resolve, reject) => {
-        bcrypt.hash(password, saltRounds, function (err, hash) {
-            if (err) reject(err)
-            resolve(hash)
-        });
-    })
-
-    return hashedPassword
+    
+    //Note: Never define a constant salt in the source file
+    const salt = '$2b$10$GA94lFm2QPNNF80uz6UMFu';
+    const hash = await bcrypt.hash(password, salt);
+    return hash
 }
 
 module.exports.hashPassword = hashPassword;
