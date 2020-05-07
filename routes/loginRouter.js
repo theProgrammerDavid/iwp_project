@@ -12,7 +12,7 @@ router.get('/', (req, res) => {
 router.post('/', async function(req, res){
     //console.log(req.body.password);
     //const hash = await bcrypt.hash(req.body.password,10).exec();
-    res.render('homepage', { layout: 'layout/afterSignIn' });
+    res.send('ok');
 });
 
 module.exports = router;
