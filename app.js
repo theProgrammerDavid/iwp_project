@@ -36,6 +36,12 @@ app.get('/contact', (req, res) => {
     res.render('contact', { layout: 'layout/beforeSignIn' });
 });
 
+app.get('/logout', (req, res) => {
+    req.session.destroy((err) => { console.log(err) })
+    console.log('session destroyed');
+    res.redirect('/login');
+})
+
 app.get('/', (req, res) => {
     res.render('main', { layout: 'layout/beforeSignIn' });
     // res.send('ok');
