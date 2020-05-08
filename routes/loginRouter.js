@@ -26,6 +26,7 @@ router.post('/', async function (req, res) {
             res.redirect('home');
 
         }
+        else { res.send('invalid credentials') }
 
     }
     else { res.send('invalid credentials'); }
