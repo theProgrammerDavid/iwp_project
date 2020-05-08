@@ -2,9 +2,12 @@
     <table class="center">
         <tr>
 
-            <td><button class="dashboard-button">
-                    <label class="btn-txt">Take Test</label>
-                </button></td>
+            <td>
+                <form action="/home/test" method="post">
+                    <input type="text" name="testid" placeholder="Test ID" autofocus>
+                    <input type="submit" id="takeTestButton" value="Take Test">
+                </form>
+            </td>
             <td><button class="dashboard-button">
                     <label class="btn-txt">View Tests</label>
                 </button></td>
