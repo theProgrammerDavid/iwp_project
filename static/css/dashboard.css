@@ -1,0 +1,18 @@
+.dashboard-button {
+  width: 400px;
+  height: 300px;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 10px;
+}
+tr {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.btn-txt {
+  font-size: 4rem;
+}
