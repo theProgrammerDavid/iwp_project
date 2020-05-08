@@ -12,7 +12,7 @@ router.get('/', (req, res) => {
 
 
 router.post('/', async function (req, res) {
-  
+
     const _pass = await hashPassword(req.body.password);
     // console.log(req.body.email)
     const doc = await User.findOne({
@@ -21,17 +21,17 @@ router.post('/', async function (req, res) {
 
     if (doc) {
         console.log(doc);
-        console.log('doc pass: '+doc.password);
+        console.log('doc pass: ' + doc.password);
         if (doc.Password === _pass) {
             console.log('correct')
             req.session.email = req.body.email;
             res.redirect('home');
 
         }
-        else { res.send('invalid credentials') }
+        else { res.render('login', { layout: 'layout/beforeSignIn', msg: 'Invalid Credentials' }); }
 
     }
-    else { res.send('user not found'); }
+    else { res.render('login', { layout: 'layout/beforeSignIn', msg: 'Invalid Credentials' }); }
     // res.send('ok');
 
 });
