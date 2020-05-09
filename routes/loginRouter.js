@@ -16,7 +16,7 @@ router.post('/', async function (req, res) {
     const _pass = await hashPassword(req.body.password);
     // console.log(req.body.email)
     const doc = await User.findOne({
-        Name: req.body.email,
+        Email: req.body.email,
     })
 
     if (doc) {
