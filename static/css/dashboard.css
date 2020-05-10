@@ -1,0 +1,88 @@
+body{
+  font-family: 'PT Sans', sans-serif;
+}
+.dashboard-button-1 {
+  position: absolute;
+  width: 400px;
+  height: 190px;
+  margin-top: -8%;
+  margin-left: 800px;
+  border-radius: 25px;
+  box-shadow: 2px 2px black;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  text-align: left;
+  font-size: 15px;
+  background-color: white;
+}
+.dashboard-button-2{
+  width: 400px;
+  height: 190px;
+  margin-top: 18%;
+  margin-left: 52%;
+  border-radius: 25px;
+  box-shadow: 2px 2px black;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  text-align: left;
+  font-size: 15px;
+  background-color: white;
+}
+.grades img{
+  height: 180px !important;
+  width: 180px;
+  margin-left: 8%;
+  margin-top: 29%;
+}
+
+.grades1 img{
+  height: 250px !important;
+  width: 250px;
+  margin-left: 65%;
+  margin-top: 26%;
+}
+
+
+
+tr {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.btn-txt {
+  font-size: 1.5rem;
+  margin-left: 5%;
+}
+
+#testID {
+  width: 250px;
+  height: 50px;
+  font-size: 20px;
+  padding: 10px;
+  margin-left: 20%;
+  margin-top: 18%;
+  border-radius: 10px;
+}
+form{
+  display: flex;
+}
+#takeTestButton {
+    
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  margin-left: 6%;
+  margin-top: 18%;
+  background: #7fe082;
+  width: 350px;
+  height: 50px;
+  border: 1px solid;
+  padding: 15px;
+
+  font-size: 20px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  border-radius: 25px;
+  box-shadow: 2px 2px black;
+}

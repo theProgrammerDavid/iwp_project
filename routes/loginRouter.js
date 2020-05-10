@@ -12,23 +12,26 @@ router.get('/', (req, res) => {
 
 
 router.post('/', async function (req, res) {
-    console.log(req.body.password)
+
     const _pass = await hashPassword(req.body.password);
-    // console.log(req.body)
+    // console.log(req.body.email)
     const doc = await User.findOne({
-        email: req.body.email,
+        Email: req.body.email,
     })
 
     if (doc) {
-        if (doc.password === _pass) {
+        console.log(doc);
+        console.log('doc pass: ' + doc.password);
+        if (doc.Password === _pass) {
             console.log('correct')
-            // req.session.email = req.body.email;
+            req.session.email = req.body.email;
             res.redirect('home');
 
         }
+        else { res.render('login', { layout: 'layout/beforeSignIn', msg: 'Invalid Credentials' }); }
 
     }
-    else { res.send('invalid credentials'); }
+    else { res.render('login', { layout: 'layout/beforeSignIn', msg: 'Invalid Credentials' }); }
     // res.send('ok');
 
 });

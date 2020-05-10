@@ -4,26 +4,27 @@ let validator = require('validator')
 const Schema = mongoose.Schema;
 
 const UserSchema = new Schema({
-		name: {
+		Name: {
 			type: String,
 			required: true,
 			select: true,
 		},
-		email: {
+		Email: {
 			type: String,
 			required: true,
 			select: true,
+			
 			lowercase: true,
 			validate : (value)=>{
 				return validator.isEmail(value);
 			}
 		},
-		phone: {
+		Phone: {
 			type: String,
 			required: true,
 			select: true,
 		},
-		password: {
+		Password: {
 			type: String,
 			required: true,
 			select: true,
