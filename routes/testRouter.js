@@ -10,7 +10,7 @@ router.post('/', async function (req, res) {
 
 });
 
-router.post('/event', async function (req, res) {
+router.get('/event', async function (req, res) {
     res.redirect('/home');
 });
 
