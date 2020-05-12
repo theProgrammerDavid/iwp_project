@@ -7,14 +7,16 @@ const User = require('../models/User');
 
 
 router.get('/', (req, res) => {
-    res.render('login', { layout: 'layout/beforeSignIn' });
+    if (req.session.email) { res.redirect('/home'); }
+    else
+        res.render('login', { layout: 'layout/beforeSignIn' });
 });
 
 
 router.post('/', async function (req, res) {
 
     const _pass = await hashPassword(req.body.password);
-    
+
     const doc = await User.findOne({
         Email: req.body.email,
     })
@@ -28,7 +30,7 @@ router.post('/', async function (req, res) {
 
     }
     else { res.render('login', { layout: 'layout/beforeSignIn', msg: 'Invalid Credentials' }); }
-    
+
 
 });
 
