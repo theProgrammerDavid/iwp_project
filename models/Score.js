@@ -10,7 +10,8 @@ const ScoreSchema = new Schema({
     Score: {
         type: Number,
         required: true
-    }
+    },
+    testid:String
 
 });
 
