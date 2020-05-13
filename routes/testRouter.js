@@ -7,7 +7,7 @@ const Question = require('../models/Question');
 const User = require('../models/User')
 
 function randomNumberGenerator(){
-    var x = Math.floor((Math.random() * 20) + 1);
+    var x = Math.floor((Math.random() * 100) + 1);
     return x
 }
 router.get('/', (req, res) => {
