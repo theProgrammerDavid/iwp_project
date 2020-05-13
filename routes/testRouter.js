@@ -13,7 +13,8 @@ function randomNumberGenerator(){
 router.get('/', (req, res) => {
     rand = randomNumberGenerator()
     Question.find({"Serial Number": rand}).then((question) => {
-        res.send(question)
+        console.log(question["Option"])
+        res.render("testpage", {layout: 'layout/afterSignIn', question: question})
     }).catch((e)=>{
         res.status(500)
     })
@@ -61,7 +62,7 @@ router.post('/', async function (req, res) {
 
 });
 
-router.post('/event', async function (req, res) {
+/* router.post('/event', async function (req, res) {
     console.log('received cheating reuqest on ' + req.session.email);
     let offense = new Offense({ email: req.session.email });
     offense.save().then().
@@ -69,5 +70,5 @@ router.post('/event', async function (req, res) {
 
     res.send('confirmed');
 });
-
+ */
 module.exports = router;

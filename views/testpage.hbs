@@ -1,3 +1,28 @@
+<div class="login-page">
+    <div class="form">
+        <h2>Question </h2>
+        <h3>{{question}}</h3>
+        <form action="/question" method="post" class="question-form">
+            <div class="container">
+
+                <p>Please select the correct option:</p>
+                <input type="radio" id="Option-1" name="option" value="">
+                <label for="Option-1">{{question}}</label><br>
+                <input type="radio" id="Option-2" name="option" value="">
+                <label for="Option-2">{{question}}</label><br>
+                <input type="radio" id="Option-3" name="option" value="">
+                <label for="Option-3">{{question}}</label><br>
+                <input type="radio" id="Option-4" name="option" value="">
+                <label for="Option-4">{{question}}</label><br>
+                <button type="submit" id="answerButton">answer</button>
+
+            </div>
+
+        </form>
+        <br>
+        </div>
+</div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <div class="countdown-timer"></div>
 <script type="text/javascript" src="/js/test.js"></script>
