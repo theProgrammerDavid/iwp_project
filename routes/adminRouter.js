@@ -36,12 +36,13 @@ router.post('/add/question', function (req, res) {
         })
 });
 
-router.post('/add/user', function (req, res) {
+router.post('/add/user', async function (req, res) {
+    let _pass = await hashPassword(req.body.password);
     let newUser = new User({
         Name: req.body.name,
         Email: req.body.email,
         Phone: req.body.phoneNumber,
-        Password: await hashPassword(req.body.password)
+        Password: _pass
     });
     newUser.save().then(doc => {
         console.log('Created New User');
