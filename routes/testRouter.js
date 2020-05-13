@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 const Offense = require('../models/Offense');
 const Question = require('../models/Question');
 const User = require('../models/User')
+const Score = require('../models/Score');
 
 function randomNumberGenerator() {
     var x = Math.floor((Math.random() * 100) + 1);
