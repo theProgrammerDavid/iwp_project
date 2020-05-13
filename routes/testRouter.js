@@ -6,6 +6,14 @@ const Offense = require('../models/Offense');
 const Question = require('../models/Question');
 
 
+router.get('/', (req, res) => {
+    Question.find({}).then((questions) => {
+        res.send(questions)
+    }).catch((e)=>{
+        res.status(500)
+    })
+})
+
 
 router.post('/make', async function (req, res) {
     xx.forEach(function (d) {

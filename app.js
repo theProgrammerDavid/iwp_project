@@ -14,6 +14,7 @@ const loginRouter = require('./routes/loginRouter');
 const signupRouter = require('./routes/signupRouter');
 const homepageRouter = require('./routes/homeRouter');
 const forgotPasswordRouter = require('./routes/forgotPassRouter')
+const questionRouter = require('./routes/testRouter')
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
@@ -29,6 +30,7 @@ app.use('/login', loginRouter);
 app.use('/forgot', forgotPasswordRouter);
 app.use('/signup', signupRouter);
 app.use('/home', homepageRouter);
+app.use('/question', questionRouter)
 app.get('/about', (req, res) => {
     res.render('about', { layout: 'layout/beforeSignIn' });
 });
