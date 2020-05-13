@@ -1,3 +1,26 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        console.log('doc is read');
+        document.addEventListener("visibilitychange", function (e) {
+            console.log('cheating');
+            const Url = window.location.href + '/event';
+
+            $.post(Url,
+                {
+                    event: 'window change'
+                },
+                function (data, status) {
+                    console.log(status)
+                    alert("Caught Cheating. Test will end");
+                    window.location.replace("http://localhost:3000/home")
+                });
+        });
+    });
+
+
+
+</script>
 <div class="login-page">
     <div class="form">
         <h2>Question </h2>
@@ -20,9 +43,9 @@
 
         </form>
         <br>
-        </div>
+    </div>
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 <div class="countdown-timer"></div>
 <script type="text/javascript" src="/js/test.js"></script>

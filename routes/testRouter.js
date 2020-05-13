@@ -115,13 +115,13 @@ router.post(' / ', function(req,res){
     
 })
 
-/* router.post('/event', async function (req, res) {
-    console.log('received cheating reuqest on ' + req.session.email);
-    let offense = new Offense({ email: req.session.email });
-    offense.save().then().
-        catch((err) => { console.log(err) });
+//  router.post('/event', async function (req, res) {
+//     console.log('received cheating reuqest on ' + req.session.email);
+//     let offense = new Offense({ email: req.session.email });
+//     offense.save().then().
+//         catch((err) => { console.log(err) });
 
-    res.send('confirmed');
-});
- */
+//     res.send('confirmed');
+// });
+ 
 module.exports = router;
