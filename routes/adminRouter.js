@@ -28,9 +28,11 @@ router.post('/add/question', function (req, res) {
     q.save()
         .then(doc => {
             console.log('saved new question');
+            res.send('saved new question');
         })
         .catch(err => {
             console.error(err);
+            res.send(err);
         })
 });
 
