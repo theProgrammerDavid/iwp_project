@@ -23,8 +23,15 @@ router.post('/add/question', function (req, res) {
         "Option 3": req.body.option3,
         "Option 4": req.body.option4,
         testid: req.body.testid,
-        "Correct Answer":req.body.correctAnswer
+        "Correct Answer": req.body.correctAnswer
     });
+    q.save()
+        .then(doc => {
+            console.log('saved new question');
+        })
+        .catch(err => {
+            console.error(err);
+        })
 });
 
 router.get('/login', function (req, res) {
