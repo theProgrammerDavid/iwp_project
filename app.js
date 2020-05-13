@@ -16,6 +16,8 @@ const homepageRouter = require('./routes/homeRouter');
 const forgotPasswordRouter = require('./routes/forgotPassRouter')
 const questionRouter = require('./routes/testRouter')
 
+const adminRouter = require('./routes/adminRouter');
+
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
@@ -29,6 +31,7 @@ app.use(express.static(__dirname + '/static'))
 app.use('/login', loginRouter);
 app.use('/forgot', forgotPasswordRouter);
 app.use('/signup', signupRouter);
+app.use('/admin', adminRouter);
 app.use('/home', homepageRouter);
 app.use('/question', questionRouter)
 app.get('/about', (req, res) => {
