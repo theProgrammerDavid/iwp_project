@@ -1,1100 +1,794 @@
 [
     {
-        "Sr. No.": "1",
-        "Question": "Deep Blue?",
-        "undefined": "A Supercomputer",
+        "Correct Answer": "Option 1",
         "Option 1": "A Supercomputer",
         "Option 2": "A Chess Game",
         "Option 3": "A Personal Computer",
         "Option 4": "A Mainframe Computer",
-        "Correct Answer": "A",
-        "Category": "Computer"
+        "Question": "Deep Blue?"
     },
     {
-        "Sr. No.": "2",
-        "Question": "Which software can provide results of mathematical calculations very easily?",
-        "undefined": "Spreadsheets",
+        "Correct Answer": "Option 1",
         "Option 1": "Spreadsheets",
         "Option 2": "Image processor",
         "Option 3": "Word processor",
         "Option 4": "None of these",
-        "Correct Answer": "A",
-        "Category": "Computer"
+        "Question": "Which software can provide results of mathematical calculations very easily?"
     },
     {
-        "Sr. No.": "3",
-        "Question": "Which of the following is the extension of graphics files?",
-        "undefined": " .gif",
+        "Correct Answer": "Option 3",
         "Option 1": ".doc",
         "Option 2": ".mdb",
         "Option 3": " .gif",
         "Option 4": ".tmp",
-        "Correct Answer": "C",
-        "Category": "Computer"
+        "Question": "Which of the following is the extension of graphics files?"
     },
     {
-        "Sr. No.": "4",
-        "Question": "Command that allows you to remove mistakes",
-        "undefined": " Undo",
+        "Correct Answer": "Option 4",
         "Option 1": "Copy",
         "Option 2": "Delete",
         "Option 3": "Cut",
         "Option 4": " Undo",
-        "Correct Answer": "D",
-        "Category": "Computer"
+        "Question": "Command that allows you to remove mistakes"
     },
     {
-        "Sr. No.": "5",
-        "Question": "________________ is readily understood by microprocessors and this language is very difficult to write in for human programmers",
-        "undefined": "Machine Language",
-        "Option 1": "Machine Language",
+        "Correct Answer": "Option 1",
+        "Option 1": "Machine Language\r\n",
         "Option 2": "Low Level Language",
         "Option 3": "High Level Language",
         "Option 4": "Assembly Language",
-        "Correct Answer": "A",
-        "Category": "Computer"
+        "Question": "________________ is readily understood by microprocessors and this language is very difficult to write in for human programmers"
     },
     {
-        "Sr. No.": "6",
-        "Question": "Which of the following is a type of system software?",
-        "undefined": "Device driver",
-        "Option 1": "Device driver",
+        "Correct Answer": "Option 1",
+        "Option 1": "Device driver\r\n\r\n\r\n\r\n",
         "Option 2": "Word processor",
         "Option 3": "Write once read -only- memory",
         "Option 4": "Anti-Virus",
-        "Correct Answer": "A",
-        "Category": "Computer"
+        "Question": "Which of the following is a type of system software?"
     },
     {
-        "Sr. No.": "7",
-        "Question": "Language that is understood by computer hardware is called",
-        "undefined": "Machine language",
+        "Correct Answer": "Option 2",
         "Option 1": "High level language",
         "Option 2": "Machine language",
         "Option 3": "Assembly language",
         "Option 4": "System software",
-        "Correct Answer": "B",
-        "Category": "Computer"
+        "Question": "Language that is understood by computer hardware is called"
     },
     {
-        "Sr. No.": "8",
-        "Question": "Vacuum Tubes are:",
-        "undefined": "Made up of two or more electrodes in a glass metal tube",
+        "Correct Answer": "Option 2",
         "Option 1": "Smaller then transistors",
         "Option 2": "Made up of two or more electrodes in a glass metal tube",
         "Option 3": "Used in IBM PC",
         "Option 4": "Invented by Tim Berners lee",
-        "Correct Answer": "B",
-        "Category": "Computer"
+        "Question": "Vacuum Tubes are:"
     },
     {
-        "Sr. No.": "9",
-        "Question": "Web server:",
-        "undefined": "Is a computer that store and deliver web pages",
+        "Correct Answer": "Option 2",
         "Option 1": "Is a software to deliver e-mail",
         "Option 2": "Is a computer that store and deliver web pages",
         "Option 3": "Does not allow electronic chatting",
         "Option 4": "Does not have a Domain name",
-        "Correct Answer": "B",
-        "Category": "Computer"
+        "Question": "Web server:"
     },
     {
-        "Sr. No.": "10",
-        "Question": "A Hyperlink is a:",
-        "undefined": "Gateway to the next web page",
+        "Correct Answer": "Option 3",
         "Option 1": "Connection between two computers",
         "Option 2": "Connection between two countries on the net",
         "Option 3": "Gateway to the next web page",
         "Option 4": "Gateway between five continents",
-        "Correct Answer": "C",
-        "Category": "Computer"
+        "Question": "A Hyperlink is a:"
     },
     {
-        "Sr. No.": "11",
-        "Question": "Search engines:",
-        "undefined": "Scan the entire web for the desired information",
+        "Correct Answer": "Option 1",
         "Option 1": "Scan the entire web for the desired information",
         "Option 2": "Search the news groups for the required information",
         "Option 3": "Make the list of images that are available on the net",
         "Option 4": "Are built to facilitate the scientists",
-        "Correct Answer": "A",
-        "Category": "Computer"
+        "Question": "Search engines:"
     },
     {
-        "Sr. No.": "12",
-        "Question": "What does internet service provider mean?",
-        "undefined": "A telephone network which helps you to connect to internet",
+        "Correct Answer": "Option 4",
         "Option 1": " A software that helps you to connect to internet",
         "Option 2": "A company that helps you to connect to internet",
         "Option 3": "A software that allows you to send/receive e-mails",
         "Option 4": "A telephone network which helps you to connect to internet",
-        "Correct Answer": "D",
-        "Category": "Computer"
+        "Question": "What does internet service provider mean?"
     },
     {
-        "Sr. No.": "13",
-        "Question": "URL is a/an __________________.",
-        "undefined": "Address",
+        "Correct Answer": "Option 3",
         "Option 1": "Device",
         "Option 2": "Component",
         "Option 3": "Address",
         "Option 4": "Tool",
-        "Correct Answer": "C",
-        "Category": "Computer"
+        "Question": "URL is a/an __________________."
     },
     {
-        "Sr. No.": "14",
-        "Question": "What is internet?",
-        "undefined": "A global network of networks",
+        "Correct Answer": "Option 1",
         "Option 1": "A global network of networks",
         "Option 2": "A Software used to connect to some network",
         "Option 3": "A group of users",
         "Option 4": "Any network of more than two computers",
-        "Correct Answer": "A",
-        "Category": "Computer"
+        "Question": "What is internet?"
     },
     {
-        "Sr. No.": "15",
-        "Question": "HTTP is the abbreviation for:",
-        "undefined": "Hyper Text Transfer Protocol",
+        "Correct Answer": "Option 3",
         "Option 1": "Hyper text transmit protocol",
         "Option 2": "Hyper text terminal protocol",
         "Option 3": "Hyper Text Transfer Protocol",
         "Option 4": "Hyper terminal text protocol",
-        "Correct Answer": "C",
-        "Category": "Computer"
+        "Question": "HTTP is the abbreviation for:"
     },
     {
-        "Sr. No.": "16",
-        "Question": "Browser is a __________________ used for browsing.",
-        "undefined": "None of these",
+        "Correct Answer": "Option 3",
         "Option 1": "Component",
         "Option 2": "Tool",
         "Option 3": "None of these",
         "Option 4": "Device",
-        "Correct Answer": "C",
-        "Category": "Computer"
+        "Question": "Browser is a __________________ used for browsing."
     },
     {
-        "Sr. No.": "17",
-        "Question": "Semantic web pages",
-        "undefined": "Are understood by computers",
+        "Correct Answer": "Option 2",
         "Option 1": "Are also called static web pages",
         "Option 2": "Are understood by computers",
         "Option 3": "Are not the extension of today's web pages",
         "Option 4": "Correct the semantics of the web page",
-        "Correct Answer": "B",
-        "Category": "Computer"
+        "Question": "Semantic web pages"
     },
     {
-        "Sr. No.": "18",
-        "Question": "A unique identifier for the location of a specific Web page is called a",
-        "undefined": "URL",
+        "Correct Answer": "Option 3",
         "Option 1": "FAQ",
         "Option 2": "FTP",
         "Option 3": "URL",
         "Option 4": "http://",
-        "Correct Answer": "C",
-        "Category": "Computer"
+        "Question": "A unique identifier for the location of a specific Web page is called a"
     },
     {
-        "Sr. No.": "19",
-        "Question": "Which of these domains is restricted to qualified organizations?",
-        "undefined": ".org",
+        "Correct Answer": "Option 2",
         "Option 1": ".com",
         "Option 2": ".org",
         "Option 3": ".net",
         "Option 4": ".edu",
-        "Correct Answer": "B",
-        "Category": "Computer"
+        "Question": "Which of these domains is restricted to qualified organizations?"
     },
     {
-        "Sr. No.": "20",
-        "Question": "The first Web pages were",
-        "undefined": "Strictly hypertext with no multimedia content",
+        "Correct Answer": "Option 1",
         "Option 1": "Strictly hypertext with no multimedia content",
         "Option 2": "Designed to simulate printed pages using HTML's table tools",
         "Option 3": "The first true multimedia documents to be published on the Internet",
         "Option 4": "Sent via email from Doug Engelbart's office on the Stanford campus",
-        "Correct Answer": "A",
-        "Category": "Computer"
+        "Question": "The first Web pages were"
     },
     {
-        "Sr. No.": "21",
-        "Question": "The Internet offers different services. Which one listed below is incorrect?",
-        "undefined": "Off line shopping",
+        "Correct Answer": "Option 3",
         "Option 1": "Chat room",
         "Option 2": "Electronic mail",
         "Option 3": "Off line shopping",
         "Option 4": "World Wide Web",
-        "Correct Answer": "C",
-        "Category": "Computer"
+        "Question": "The Internet offers different services. Which one listed below is incorrect?"
     },
     {
-        "Sr. No.": "22",
-        "Question": "What does HTML stand for?",
-        "undefined": "Hyper Text Markup Language",
+        "Correct Answer": "Option 1",
         "Option 1": "Hyper Text Markup Language",
         "Option 2": "Home Tool Markup Language",
         "Option 3": "Hyperlinks and Text Markup Language",
         "Option 4": "None Of the Above",
-        "Correct Answer": "A",
-        "Category": "Computer"
+        "Question": "What does HTML stand for?"
     },
     {
-        "Sr. No.": "23",
-        "Question": "Ports are:",
-        "undefined": "Used to allow I/O devices to communicate with the CPU",
+        "Correct Answer": "Option 3",
         "Option 1": " Input devices",
         "Option 2": "Output devices",
         "Option 3": "Used to allow I/O devices to communicate with the CPU",
         "Option 4": "Able to process incoming data",
-        "Correct Answer": "C",
-        "Category": "Computer"
+        "Question": "Ports are:"
     },
     {
-        "Sr. No.": "24",
-        "Question": "Modem is used:",
-        "undefined": "For communication of data between internet and your computer",
+        "Correct Answer": "Option 3",
         "Option 1": "Only to enter data into computer",
         "Option 2": "For calculating huge numbers",
         "Option 3": "For communication of data between internet and your computer",
         "Option 4": "To write information on the world wide web",
-        "Correct Answer": "C",
-        "Category": "Computer"
+        "Question": "Modem is used:"
     },
     {
-        "Sr. No.": "25",
-        "Question": "What computer hardware is essential for connecting two computers in Local Area Network?",
-        "undefined": "Ethernet card",
+        "Correct Answer": "Option 2",
         "Option 1": "Modem",
         "Option 2": "Ethernet card",
         "Option 3": "VGA",
         "Option 4": "Internet Connection",
-        "Correct Answer": "B",
-        "Category": "Computer"
+        "Question": "What computer hardware is essential for connecting two computers in Local Area Network?"
     },
     {
-        "Sr. No.": "26",
-        "Question": "The input device that reads printed characters, symbols, or graphical images into the computer is the:",
-        "undefined": "Scanner",
+        "Correct Answer": "Option 4",
         "Option 1": "Sensors",
         "Option 2": "Speech recognition",
         "Option 3": "Mouse",
         "Option 4": "Scanner",
-        "Correct Answer": "D",
-        "Category": "Computer"
+        "Question": "The input device that reads printed characters, symbols, or graphical images into the computer is the:"
     },
     {
-        "Sr. No.": "27",
-        "Question": "Computer uses the scanner to input",
-        "undefined": "Images",
+        "Correct Answer": "Option 2",
         "Option 1": "Voice",
         "Option 2": "Images",
         "Option 3": "Voice and text",
         "Option 4": "None of these",
-        "Correct Answer": "B",
-        "Category": "Computer"
+        "Question": "Computer uses the scanner to input"
     },
     {
-        "Sr. No.": "28",
-        "Question": "Software is",
-        "undefined": "Something that cannot be touched",
+        "Correct Answer": "Option 2",
         "Option 1": "Something that can be touched",
         "Option 2": "Something that cannot be touched",
         "Option 3": "Something used only as an output device",
         "Option 4": "Something used only as an input device",
-        "Correct Answer": "B",
-        "Category": "Computer"
+        "Question": "Software is"
     },
     {
-        "Sr. No.": "29",
-        "Question": "Which of the following is called the brain of computer?",
-        "undefined": "Processor",
+        "Correct Answer": "Option 3",
         "Option 1": "Motherboard",
         "Option 2": "Slots",
         "Option 3": "Processor",
         "Option 4": "Power supply",
-        "Correct Answer": "C",
-        "Category": "Computer"
+        "Question": "Which of the following is called the brain of computer?"
     },
     {
-        "Sr. No.": "30",
-        "Question": "------------ is volatile memory",
-        "undefined": "RAM",
+        "Correct Answer": "Option 1",
         "Option 1": "RAM",
         "Option 2": "ROM",
         "Option 3": "Hard Disk",
         "Option 4": "CD ROM",
-        "Correct Answer": "A",
-        "Category": "Computer"
+        "Question": "------------ is volatile memory"
     },
     {
-        "Sr. No.": "31",
-        "Question": "On the motherboard (the) … is the temporary computer memory area in which data can be stored.",
-        "undefined": "RAM",
+        "Correct Answer": "Option 3",
         "Option 1": "expansion slot",
         "Option 2": "math co-processor",
         "Option 3": "RAM",
         "Option 4": "ROM BIOS",
-        "Correct Answer": "C",
-        "Category": "Computer"
+        "Question": "On the motherboard (the) \u2026 is the temporary computer memory area in which data can be stored."
     },
     {
-        "Sr. No.": "32",
-        "Question": "The device used in a data communication network to perform the conversion between analogue and digital signals, is called a …",
-        "undefined": "modem",
+        "Correct Answer": "Option 2",
         "Option 1": "front end processor",
         "Option 2": "modem",
         "Option 3": "decoder",
         "Option 4": "multiplexer",
-        "Correct Answer": "B",
-        "Category": "Computer"
+        "Question": "The device used in a data communication network to perform the conversion between analogue and digital signals, is called a \u2026"
     },
     {
-        "Sr. No.": "33",
-        "Question": "A web site",
-        "undefined": "Is a collection of related documents on the internet",
+        "Correct Answer": "Option 2",
         "Option 1": "Is a place where we can only read information on the internet",
         "Option 2": "Is a collection of related documents on the internet",
         "Option 3": "Is a place on the net where we can only write information",
         "Option 4": "None of these",
-        "Correct Answer": "B",
-        "Category": "Computer"
+        "Question": "A web site"
     },
     {
-        "Sr. No.": "34",
-        "Question": "When the electrical power is disrupted or cut off, data and programs are lost in/on (the) …",
-        "undefined": "memory",
+        "Correct Answer": "Option 3",
         "Option 1": "basic tools",
         "Option 2": "hard disk",
         "Option 3": "memory",
         "Option 4": "secondary storage",
-        "Correct Answer": "C",
-        "Category": "Computer"
+        "Question": "When the electrical power is disrupted or cut off, data and programs are lost in/on (the) \u2026"
     },
     {
-        "Sr. No.": "35",
-        "Question": "Read Only Memory (ROM)",
-        "undefined": "is Non Volatile",
+        "Correct Answer": "Option 4",
         "Option 1": "Is Volatile",
         "Option 2": "Is programmable",
         "Option 3": "Is mounted on the mother board",
         "Option 4": "is Non Volatile",
-        "Correct Answer": "D",
-        "Category": "Computer"
+        "Question": "Read Only Memory (ROM)"
     },
     {
-        "Sr. No.": "36",
-        "Question": "Using only Html we can create",
-        "undefined": "Static web pages",
+        "Correct Answer": "Option 2",
         "Option 1": "Dynamic web pages",
         "Option 2": "Static web pages",
         "Option 3": "Both Static and Dynamic pages",
         "Option 4": "None of these",
-        "Correct Answer": "B",
-        "Category": "Computer"
+        "Question": "Using only Html we can create"
     },
     {
-        "Sr. No.": "37",
-        "Question": "A hardware device that stores data and programs, executes program instructions, and performs arithmetic/logic operations is known as the ____.",
-        "undefined": "CPU",
+        "Correct Answer": "Option 1",
         "Option 1": "CPU",
         "Option 2": "Integrated Circuit",
         "Option 3": "Main Storage",
         "Option 4": "Memory",
-        "Correct Answer": "A",
-        "Category": "Computer"
+        "Question": "A hardware device that stores data and programs, executes program instructions, and performs arithmetic/logic operations is known as the ____."
     },
     {
-        "Sr. No.": "38",
-        "Question": "A group of binary digits that a computer manipulate as a unit is called",
-        "undefined": " Byte",
+        "Correct Answer": "Option 1",
         "Option 1": " Byte",
         "Option 2": "Word",
         "Option 3": " Bit",
         "Option 4": "Hertz",
-        "Correct Answer": "A",
-        "Category": "Computer"
+        "Question": "A group of binary digits that a computer manipulate as a unit is called"
     },
     {
-        "Sr. No.": "39",
-        "Question": "Microsoft Word is a type of:",
-        "undefined": " Shrink-Wrapped Software",
+        "Correct Answer": "Option 3",
         "Option 1": " System Software",
         "Option 2": "Freeware Software",
         "Option 3": " Shrink-Wrapped Software",
         "Option 4": "Custom-built Software",
-        "Correct Answer": "C",
-        "Category": "Computer"
+        "Question": "Microsoft Word is a type of:\r\n\r\n\r\n\r\n"
     },
     {
-        "Sr. No.": "40",
-        "Question": "Speakers fall into the hardware category.",
-        "undefined": "TRUE",
+        "Correct Answer": "Option 1",
         "Option 1": " True",
-        "Option 2": "False",
+        "Option 2": "False\r\n",
         "Option 3": "None of these",
-        "Option 4": "……………….",
-        "Correct Answer": "A",
-        "Category": "Computer"
+        "Option 4": "\u2026\u2026\u2026\u2026\u2026\u2026.",
+        "Question": "Speakers fall into the hardware category.\r\n"
     },
     {
-        "Sr. No.": "41",
-        "Question": "Which is the user-friendly way of presenting data ?",
-        "undefined": "Report",
+        "Correct Answer": "Option 3",
         "Option 1": " Query",
         "Option 2": " Form",
         "Option 3": "Report",
         "Option 4": "All of the given options",
-        "Correct Answer": "C",
-        "Category": "Computer"
+        "Question": "Which is the user-friendly way of presenting data ?"
     },
     {
-        "Sr. No.": "42",
-        "Question": "You can view a 3-D image on a _____________.",
-        "undefined": "On both 2-D and 3-D displays",
+        "Correct Answer": "Option 3",
         "Option 1": "3-D display",
         "Option 2": " 2-D display",
         "Option 3": "On both 2-D and 3-D displays",
         "Option 4": "We can not view a 3-D image",
-        "Correct Answer": "C",
-        "Category": "Computer"
+        "Question": "You can view a 3-D image on a _____________."
     },
     {
-        "Sr. No.": "43",
-        "Question": "The most upper right pixel of the screen is of ___________ color.",
-        "undefined": " Any",
+        "Correct Answer": "Option 1",
         "Option 1": " Any",
         "Option 2": " Red",
         "Option 3": "Green",
         "Option 4": "Blue",
-        "Correct Answer": "A",
-        "Category": "Computer"
+        "Question": "The most upper right pixel of the screen is of ___________ color."
     },
     {
-        "Sr. No.": "44",
-        "Question": "WWW stands for ?",
-        "undefined": "World Wide Web",
+        "Correct Answer": "Option 4",
         "Option 1": "World Whole Web",
         "Option 2": "Wide World Web",
         "Option 3": "Web World Wide",
         "Option 4": "World Wide Web",
-        "Correct Answer": "D",
-        "Category": "Computer"
+        "Question": "WWW stands for ?"
     },
     {
-        "Sr. No.": "45",
-        "Question": "After Posting an Add Online, If you Receive a message saying \"Awaiting Approval\", What does it Mean ?",
-        "undefined": " The Ad will Be Posted once it's Approved",
+        "Correct Answer": "Option 3",
         "Option 1": "The Ad will not be Posted",
         "Option 2": "The Ad will get Pop up",
         "Option 3": "The Ad will Be Posted once it's Approved",
         "Option 4": " None Of the Above",
-        "Correct Answer": "C",
-        "Category": "Computer"
+        "Question": "After Posting an Add Online, If you Receive a message saying \"Awaiting Approval\", What does it Mean ?"
     },
     {
-        "Sr. No.": "46",
-        "Question": "How do we save a document on a desktop ?",
-        "undefined": "Click on File < Save As < type the Name < select desktop",
+        "Correct Answer": "Option 2",
         "Option 1": " Click on the Close Button and the document will be automatically saved.",
         "Option 2": " Click on File < Save As < type the Name < select desktop",
         "Option 3": " Click on File < Share < select desktop",
         "Option 4": " None Of the Above",
-        "Correct Answer": "B",
-        "Category": "Basic Computer"
+        "Question": "How do we save a document on a desktop ?"
     },
     {
-        "Sr. No.": "47",
-        "Question": "How do you add an attachment in a mail ?",
-        "undefined": "Click Compose > Click on attach > Browse and select the File",
+        "Correct Answer": "Option 2",
         "Option 1": "Press CTRL + S on your keyboard to attach",
         "Option 2": "Click Compose > Click on attach > Browse and select the File",
         "Option 3": "Press CTRL + D on your keyboard to attach",
         "Option 4": " None Of the Above",
-        "Correct Answer": "B",
-        "Category": "Basic Computer"
+        "Question": "How do you add an attachment in a mail ?"
     },
     {
-        "Sr. No.": "48",
-        "Question": "Short Key to Switch to Another Window ?",
-        "undefined": "ALT + TAB",
+        "Correct Answer": "Option 2",
         "Option 1": " ALT + F4",
         "Option 2": " ALT + TAB",
         "Option 3": "  CTRL + TAB",
         "Option 4": " None Of the Above",
-        "Correct Answer": "B",
-        "Category": "Basic Computer"
+        "Question": "Short Key to Switch to Another Window ?"
     },
     {
-        "Sr. No.": "49",
-        "Question": "How do u search a specific mail in your Inbox ?",
-        "undefined": "Type the name of the person or file in the Search Bar",
+        "Correct Answer": "Option 1",
         "Option 1": "Type the name of the person or file in the Search Bar",
         "Option 2": "Cannot search for the Mail at all",
         "Option 3": "Type the name of the person or file in the Web Browser",
         "Option 4": " None Of the Above",
-        "Correct Answer": "A",
-        "Category": "Basic Computer"
+        "Question": "How do u search a specific mail in your Inbox ?"
     },
     {
-        "Sr. No.": "50",
-        "Question": "Keyboard Shortcuts , please specify ( Eg : CTRL + A  is to Select all ) , Similarly ,CTRL+C,CTRL+X,CTRL+V,CTRL+Z",
-        "undefined": "CTRL+C= COPY ; CTRL+X=CUT; CTRL+V=PASTE ; CTRL + Z = UNDO",
+        "Correct Answer": "Option 2",
         "Option 1": "CTRL+C= PASTE ; CTRL+X=COPY; CTRL+V=CUT ; CTRL + Z = UNDO",
         "Option 2": "CTRL+C= COPY ; CTRL+X=CUT; CTRL+V=PASTE ; CTRL + Z = UNDO",
         "Option 3": "CTRL+C= CUT ; CTRL+X=PASTE; CTRL+V=COPY ; CTRL + Z = UNDO",
         "Option 4": " None Of the Above",
-        "Correct Answer": "B",
-        "Category": "Basic Computer"
+        "Question": "Keyboard Shortcuts , please specify ( Eg : CTRL + A\u00a0 is to Select all ) , Similarly ,CTRL+C,CTRL+X,CTRL+V,CTRL+Z"
     },
     {
-        "Sr. No.": "51",
-        "Question": "Please select the Browser to Surf Internet ?",
-        "undefined": " Internet Explorer , Mozilla",
+        "Correct Answer": "Option 1",
         "Option 1": "  Internet Explorer , Mozilla",
         "Option 2": "MS word and MS excel  ",
         "Option 3": "Yahoomail and Gmail",
         "Option 4": " None Of the Above",
-        "Correct Answer": "A",
-        "Category": "Basic Computer"
+        "Question": "Please select the Browser to Surf Internet ?"
     },
     {
-        "Sr. No.": "52",
-        "Question": "Shortcut to open excel : Start < Run < Excel  ",
-        "undefined": "TRUE",
-        "Option 1": "TRUE",
-        "Option 2": "FALSE",
-        "Correct Answer": "A",
-        "Category": "Basic Computer"
-    },
-    {
-        "Sr. No.": "53",
-        "Question": "Which key is mapped to right hand thumb ? ",
-        "undefined": "Space Bar",
-        "Option 1": "Right Shift",
-        "Option 2": "p' key",
-        "Option 3": "Enter Key",
+        "Correct Answer": "Option 4",
+        "Option 1": "Right Shift\r\n",
+        "Option 2": "p' key\r\n",
+        "Option 3": "Enter Key\r\n",
         "Option 4": "Space Bar",
-        "Correct Answer": "D",
-        "Category": "Basic Computer"
+        "Question": "Which key is mapped to right hand thumb ? \r\n"
     },
     {
-        "Sr. No.": "54",
-        "Question": "An operator takes 2.5 hours to enter data from 50 forms. How many forms will he be able to complete, if he works for 10 hours? ",
-        "undefined": "200 ",
-        "Option 1": "125 ",
-        "Option 2": "200 ",
-        "Option 3": "250 ",
+        "Correct Answer": "Option 2",
+        "Option 1": "125 \r\n",
+        "Option 2": "200 \r\n",
+        "Option 3": "250 \r\n",
         "Option 4": "500",
-        "Correct Answer": "B",
-        "Category": "Basic Computer"
+        "Question": "An operator takes 2.5 hours to enter data from 50 forms. How many forms will he be able to complete, if he works for 10 hours? "
     },
     {
-        "Sr. No.": "55",
-        "Question": "1 MB equals",
-        "undefined": "1024 KB",
-        "Option 1": "1000 KB",
-        "Option 2": "1024 GB",
-        "Option 3": "1024 bytes",
+        "Correct Answer": "Option 4",
+        "Option 1": "1000 KB\r\n",
+        "Option 2": "1024 GB\r\n",
+        "Option 3": "1024 bytes\r\n",
         "Option 4": "1024 KB",
-        "Correct Answer": "D",
-        "Category": "Basic Computer"
+        "Question": "1 MB equals\r\n\r\n"
     },
     {
-        "Sr. No.": "56",
-        "Question": "The table shows a status report showing the deliveries made in the month of May. Who was the first client to whom the delivery was made?  ",
-        "undefined": "A ",
-        "Option 1": "A ",
-        "Option 2": "C ",
+        "Correct Answer": "Option 1",
+        "Option 1": "A \r\n",
+        "Option 2": "\r\nC \r\n",
         "Option 3": " D ",
         "Option 4": "E ",
-        "Correct Answer": "A",
-        "Category": "Basic Computer"
+        "Question": "The table shows a status report showing the deliveries made in the month of May. Who was the first client to whom the delivery was made? \r\n \r\n"
     },
     {
-        "Sr. No.": "57",
-        "Question": "You have a file with an extension pdf. Which of the following software is needed to open this file? ",
-        "undefined": "Acrobat Reader ",
+        "Correct Answer": "Option 3",
         "Option 1": "MS Excel ",
         "Option 2": "MS Word ",
         "Option 3": "Acrobat Reader ",
         "Option 4": " Paint",
-        "Correct Answer": "C",
-        "Category": "Basic Computer"
+        "Question": "You have a file with an extension pdf. Which of the following software is needed to open this file? "
     },
     {
-        "Sr. No.": "58",
-        "Question": "A person takes 10 minutes to install software in one computer. In how many computers will he able to install the software in one hour? ",
-        "undefined": "6 ",
+        "Correct Answer": "Option 2",
         "Option 1": "5",
         "Option 2": "6",
         "Option 3": "10",
         "Option 4": "20",
-        "Correct Answer": "B",
-        "Category": "Basic Computer"
+        "Question": "A person takes 10 minutes to install software in one computer. In how many computers will he able to install the software in one hour? "
     },
     {
-        "Sr. No.": "59",
-        "Question": "You work in department A of a company. You receive a service request from a customer which has to be handled by department B as per the company guidelines. What should you do in this case? ",
-        "undefined": "C",
-        "Option 1": "You should ask the customer not to send such requests to department A ",
-        "Option 2": "You should forward the service request to your manager ",
-        "Option 3": "You should handle the request and meet the customer's requirement ",
+        "Correct Answer": "Option 3",
+        "Option 1": "You should ask the customer not to send such requests to department A \r\n",
+        "Option 2": "You should forward the service request to your manager \r\n",
+        "Option 3": "You should handle the request and meet the customer's requirement \r\n\r\n",
         "Option 4": "You should inform the head of department B and ask him as to why your department is getting such requests",
-        "Correct Answer": "C",
-        "Category": "Basic Computer"
+        "Question": "You work in department A of a company. You receive a service request from a customer which has to be handled by department B as per the company guidelines. What should you do in this case? \r\n"
     },
     {
-        "Sr. No.": "60",
-        "Question": "What does \"F\" mean on the F1, F2, F3, F4, etc. keyboard keys? ",
-        "undefined": "Function ",
-        "Option 1": "Find ",
-        "Option 2": "File ",
-        "Option 3": "Format ",
+        "Correct Answer": "Option 4",
+        "Option 1": "Find \r\n",
+        "Option 2": "File \r\n",
+        "Option 3": "Format \r\n",
         "Option 4": "Function ",
-        "Correct Answer": "D",
-        "Category": "Basic Computer"
+        "Question": "What does \"F\" mean on the F1, F2, F3, F4, etc. keyboard keys? "
     },
     {
-        "Sr. No.": "61",
-        "Question": "You have completed the worksheet and want to make certain that you have not made spelling or grammar errors. Which button will you select?   ",
-        "undefined": "B ",
-        "Option 1": "A ",
-        "Option 2": "B ",
-        "Option 3": "C ",
+        "Correct Answer": "Option 2",
+        "Option 1": "A \r\n\r\n",
+        "Option 2": "B \r\n",
+        "Option 3": "C \r\n",
         "Option 4": "D  ",
-        "Correct Answer": "B",
-        "Category": "Basic Computer"
+        "Question": "You have completed the worksheet and want to make certain that you have not made spelling or grammar errors. Which button will you select? \r\n  \r\n"
     },
     {
-        "Sr. No.": "62",
-        "Question": "From what location are the 1st computer instructions available on boot up?",
-        "undefined": "ROM BIOS",
-        "Option 1": "ROM BIOS",
-        "Option 2": "CPU",
-        "Option 3": "boot.ini",
-        "Option 4": "CONFIG.SYS",
-        "Correct Answer": "A",
-        "Category": "Basic Computer"
+        "Correct Answer": "Option 1",
+        "Option 1": "\r\nROM BIOS\r\n",
+        "Option 2": "CPU\r\n",
+        "Option 3": "boot.ini\r\n",
+        "Option 4": "CONFIG.SYS\r\n",
+        "Question": "From what location are the 1st computer instructions available on boot up?"
     },
     {
-        "Sr. No.": "63",
-        "Question": "Missing slot covers on a computer can cause?",
-        "undefined": "over heat",
+        "Correct Answer": "Option 1",
         "Option 1": "over heat",
         "Option 2": "power surges",
         "Option 3": "EMI",
         "Option 4": "incomplete path for ESD",
-        "Correct Answer": "A",
-        "Category": "Basic Computer"
+        "Question": "Missing slot covers on a computer can cause?\r\n\r\n"
     },
     {
-        "Sr. No.": "64",
-        "Question": "A hard disk is divided into tracks which are further subdivided into:",
-        "undefined": "sectors",
-        "Option 1": "clusters",
-        "Option 2": "sectors",
-        "Option 3": "vectors",
-        "Option 4": "heads",
-        "Correct Answer": "B",
-        "Category": "Basic Computer"
+        "Correct Answer": "Option 2",
+        "Option 1": "clusters\r\n",
+        "Option 2": "sectors\r\n",
+        "Option 3": "vectors\r\n",
+        "Option 4": "heads\r\n",
+        "Question": "A hard disk is divided into tracks which are further subdivided into:"
     },
     {
-        "Sr. No.": "65",
-        "Question": "The mouse pointer moves erratically, what is the possible cause? The mouse",
-        "undefined": "ball is dirty",
+        "Correct Answer": "Option 1",
         "Option 1": "ball is dirty",
         "Option 2": "is not connected",
         "Option 3": "driver is not installed properly",
         "Option 4": "has an incorrect IRQ setting",
-        "Correct Answer": "A",
-        "Category": "Basic Computer"
+        "Question": "The mouse pointer moves erratically, what is the possible cause? The mouse"
     },
     {
-        "Sr. No.": "66",
-        "Question": "Voltage is measured:",
-        "undefined": "in parallel",
+        "Correct Answer": "Option 1",
         "Option 1": "in parallel",
         "Option 2": "in series",
         "Option 3": "after checking current",
         "Option 4": "after checking resistance",
-        "Correct Answer": "A",
-        "Category": "Basic Computer"
+        "Question": "Voltage is measured:"
     },
     {
-        "Sr. No.": "67",
-        "Question": "Jenny ___________ tired.",
+        "Correct Answer": "Option 2",
         "Option 1": "be",
         "Option 2": " is",
         "Option 3": " has",
         "Option 4": " have",
-        "Correct Answer": "B",
-        "undefined": " is",
-        "Category": "English"
+        "Question": "Jenny ___________ tired."
     },
     {
-        "Sr. No.": "68",
-        "Question": "\" ___________ is she?\" \"She's my friend from London\"",
+        "Correct Answer": "Option 1",
         "Option 1": "Who",
         "Option 2": " Why",
         "Option 3": " Which",
         "Option 4": " What",
-        "Correct Answer": "A",
-        "undefined": "Who",
-        "Category": "English"
+        "Question": "\" ___________ is she?\" \"She's my friend from London\""
     },
     {
-        "Sr. No.": "69",
-        "Question": "Today is Wednesday. Yesterday it ___________ Tuesday.",
+        "Correct Answer": "Option 4",
         "Option 1": " were",
         "Option 2": " is",
         "Option 3": " be",
         "Option 4": " was",
-        "Correct Answer": "D",
-        "undefined": " was",
-        "Category": "English"
+        "Question": "Today is Wednesday. Yesterday it ___________ Tuesday."
     },
     {
-        "Sr. No.": "70",
-        "Question": "It's Thursday today. Tomorrow it ___________ Friday.",
+        "Correct Answer": "Option 3",
         "Option 1": " be",
         "Option 2": " was",
         "Option 3": " will be",
         "Option 4": " will",
-        "Correct Answer": "C",
-        "undefined": " will be",
-        "Category": "English"
+        "Question": "It's Thursday today. Tomorrow it ___________ Friday."
     },
     {
-        "Sr. No.": "71",
-        "Question": "___________ lots of animals in the zoo.",
+        "Correct Answer": "Option 3",
         "Option 1": "There",
         "Option 2": " There is",
         "Option 3": " There are",
         "Option 4": " There aren't",
-        "Correct Answer": "C",
-        "undefined": " There are",
-        "Category": "English"
+        "Question": "___________ lots of animals in the zoo."
     },
     {
-        "Sr. No.": "72",
-        "Question": "How many people ___________ in your family?",
+        "Correct Answer": "Option 1",
         "Option 1": " are there",
         "Option 2": " is there",
         "Option 3": " there are",
         "Option 4": " there",
-        "Correct Answer": "A",
-        "undefined": " are there",
-        "Category": "English"
+        "Question": "How many people ___________ in your family?"
     },
     {
-        "Sr. No.": "73",
-        "Question": "\"Has Steve got a sister?\" \"No, he ___________, but he's got 2 brothers.\"",
+        "Correct Answer": "Option 2",
         "Option 1": " has",
         "Option 2": " hasn't",
         "Option 3": " haven't",
         "Option 4": " not",
-        "Correct Answer": "B",
-        "undefined": " hasn't",
-        "Category": "English"
+        "Question": "\"Has Steve got a sister?\" \"No, he ___________, but he's got 2 brothers.\""
     },
     {
-        "Sr. No.": "74",
-        "Question": "Where ___________ Sarah live?",
+        "Correct Answer": "Option 4",
         "Option 1": " are",
         "Option 2": " is",
         "Option 3": " do",
         "Option 4": " does",
-        "Correct Answer": "D",
-        "undefined": " does",
-        "Category": "English"
+        "Question": "Where ___________ Sarah live?"
     },
     {
-        "Sr. No.": "75",
-        "Question": " ___________ to London on the train yesterday?",
+        "Correct Answer": "Option 2",
         "Option 1": "Did Mary went",
         "Option 2": " Did Mary go",
         "Option 3": " Mary go",
         "Option 4": " Mary goes",
-        "Correct Answer": "B",
-        "undefined": " Did Mary go",
-        "Category": "English"
+        "Question": " ___________ to London on the train yesterday?"
     },
     {
-        "Sr. No.": "76",
-        "Question": "Jack ___________ English, Spanish and a bit of French.",
+        "Correct Answer": "Option 1",
         "Option 1": "speaks",
         "Option 2": " speak ",
         "Option 3": "speaking",
         "Option 4": " is speaking",
-        "Correct Answer": "A",
-        "undefined": "speaks",
-        "Category": "English"
+        "Question": "Jack ___________ English, Spanish and a bit of French."
     },
     {
-        "Sr. No.": "77",
-        "Question": "Which crop is sown on the largest area in India?  ",
+        "Correct Answer": "Option 1",
         "Option 1": "Rice",
         "Option 2": "Wheat",
         "Option 3": "Sugarcane",
         "Option 4": "Maize",
-        "Correct Answer": "A",
-        "undefined": "Rice",
-        "Category": "G.K"
+        "Question": "Which crop is sown on the largest area in India?  "
     },
     {
-        "Sr. No.": "78",
-        "Question": "The value of Gold is determined in",
+        "Correct Answer": "Option 4",
         "Option 1": "Rome ",
         "Option 2": "Washington",
         "Option 3": "Teheran",
         "Option 4": "London",
-        "Correct Answer": "D",
-        "undefined": "London",
-        "Category": "G.K"
+        "Question": "The value of Gold is determined in"
     },
     {
-        "Sr. No.": "79",
-        "Question": "The state which has the largest number of sugar mills in India is",
+        "Correct Answer": "Option 4",
         "Option 1": "Bihar",
         "Option 2": "Haryana",
         "Option 3": "Punjab",
         "Option 4": "Uttar Pradesh",
-        "Correct Answer": "D",
-        "undefined": "Uttar Pradesh",
-        "Category": "G.K"
+        "Question": "The state which has the largest number of sugar mills in India is"
     },
     {
-        "Sr. No.": "80",
-        "Question": "First University in India was founded at",
+        "Correct Answer": "Option 3",
         "Option 1": "Bombay",
         "Option 2": "Chennai",
         "Option 3": "Calcutta",
         "Option 4": "Delhi",
-        "Correct Answer": "C",
-        "undefined": "Calcutta",
-        "Category": "G.K"
+        "Question": "First University in India was founded at"
     },
     {
-        "Sr. No.": "81",
-        "Question": "Tajmahal is on the banks of",
+        "Correct Answer": "Option 2",
         "Option 1": "Ganges",
         "Option 2": "Jamuna",
         "Option 3": "Tapti",
         "Option 4": "Cauvery",
-        "Correct Answer": "B",
-        "undefined": "Jamuna",
-        "Category": "G.K"
+        "Question": "Tajmahal is on the banks of"
     },
     {
-        "Sr. No.": "82",
-        "Question": "The currency notes are printed in",
+        "Correct Answer": "Option 2",
         "Option 1": "New Delhi",
         "Option 2": "Nasik",
         "Option 3": "Nagpur",
         "Option 4": "Bombay",
-        "Correct Answer": "B",
-        "undefined": "Nasik",
-        "Category": "G.K"
+        "Question": "The currency notes are printed in"
     },
     {
-        "Sr. No.": "83",
-        "Question": "Which is the Land of the Rising Sun?",
+        "Correct Answer": "Option 1",
         "Option 1": "Japan",
         "Option 2": "Australia",
         "Option 3": "China",
         "Option 4": "Taiwan",
-        "Correct Answer": "A",
-        "undefined": "Japan",
-        "Category": "G.K"
+        "Question": "Which is the Land of the Rising Sun?"
     },
     {
-        "Sr. No.": "84",
-        "Question": "The largest ocean in the world is",
+        "Correct Answer": "Option 4",
         "Option 1": "The Indian Ocean",
         "Option 2": "The Antarctic",
         "Option 3": "The Atlantic Ocean",
         "Option 4": "The Pacific Ocean",
-        "Correct Answer": "D",
-        "undefined": "The Pacific Ocean",
-        "Category": "G.K"
+        "Question": "The largest ocean in the world is"
     },
     {
-        "Sr. No.": "85",
-        "Question": "Which one of the following union territories has its territorial areas spread in three states?",
+        "Correct Answer": "Option 2",
         "Option 1": "Delhi",
         "Option 2": "Pondicherry",
         "Option 3": "Chandrigarh",
         "Option 4": "Lakshadeep",
-        "Correct Answer": "B",
-        "undefined": "Pondicherry",
-        "Category": "G.K"
+        "Question": "Which one of the following union territories has its territorial areas spread in three states?"
     },
     {
-        "Sr. No.": "86",
-        "Question": "The first president of the Republic of India was",
+        "Correct Answer": "Option 4",
         "Option 1": "V.V.Giri",
         "Option 2": "Zakir Hussain",
         "Option 3": "Dr.Radhakrishnan",
         "Option 4": "Dr.Rajendra Prasad",
-        "Correct Answer": "D",
-        "undefined": "Dr.Rajendra Prasad",
-        "Category": "G.K"
+        "Question": "The first president of the Republic of India was"
     },
     {
-        "Sr. No.": "87",
-        "Question": "The first to establish regular trade with India was",
+        "Correct Answer": "Option 2",
         "Option 1": "Dutch",
         "Option 2": "Portuguese",
         "Option 3": "French",
         "Option 4": "English",
-        "Correct Answer": "B",
-        "undefined": "Portuguese",
-        "Category": "G.K"
+        "Question": "The first to establish regular trade with India was"
     },
     {
-        "Sr. No.": "88",
-        "Question": "The World Largest desert is",
+        "Correct Answer": "Option 3",
         "Option 1": "Thar",
         "Option 2": "Kalahari",
         "Option 3": "Sahara",
         "Option 4": "Sonoran",
-        "Correct Answer": "C",
-        "undefined": "Sahara",
-        "Category": "G.K"
+        "Question": "The World Largest desert is"
     },
     {
-        "Sr. No.": "89",
-        "Question": "2010 Commonwealth Games held in",
+        "Correct Answer": "Option 2",
         "Option 1": "Canada",
         "Option 2": "India",
         "Option 3": "Britian",
         "Option 4": "Malaysia",
-        "Correct Answer": "B",
-        "undefined": "India",
-        "Category": "G.K"
+        "Question": "2010 Commonwealth Games held in"
     },
     {
-        "Sr. No.": "90",
-        "Question": "Krishna Poonia is associated with",
+        "Correct Answer": "Option 3",
         "Option 1": "Football",
         "Option 2": "Hockey",
         "Option 3": "Chess",
         "Option 4": "Athletics",
-        "Correct Answer": "C",
-        "undefined": "Chess",
-        "Category": "G.K"
+        "Question": "Krishna Poonia is associated with"
     },
     {
-        "Sr. No.": "91",
-        "Question": "Mount Everest is located in",
+        "Correct Answer": "Option 2",
         "Option 1": "India",
         "Option 2": "Nepal",
         "Option 3": "Tibet",
         "Option 4": "China",
-        "Correct Answer": "B",
-        "undefined": "Nepal",
-        "Category": "G.K"
+        "Question": "Mount Everest is located in"
     },
     {
-        "Sr. No.": "92",
-        "Question": "Which soil is suitable for agriculture",
+        "Correct Answer": "Option 4",
         "Option 1": "Red soil",
         "Option 2": "Sand",
         "Option 3": "Black soil",
         "Option 4": "Peaty soil",
-        "Correct Answer": "D",
-        "undefined": "Peaty soil",
-        "Category": "G.K"
+        "Question": "Which soil is suitable for agriculture"
     },
     {
-        "Sr. No.": "93",
-        "Question": "Black soils are best suited for the cultivation of",
+        "Correct Answer": "Option 1",
         "Option 1": "Cotton",
         "Option 2": "Rice",
         "Option 3": "Cereals",
         "Option 4": "Sugarcane",
-        "Correct Answer": "A",
-        "undefined": "Cotton",
-        "Category": "G.K"
+        "Question": "Black soils are best suited for the cultivation of"
     },
     {
-        "Sr. No.": "94",
-        "Question": "The Gate way of India is",
+        "Correct Answer": "Option 2",
         "Option 1": "Chennai",
         "Option 2": "Mumbai",
         "Option 3": "Kolkata",
         "Option 4": "New Delhi",
-        "Correct Answer": "B",
-        "undefined": "Mumbai",
-        "Category": "G.K"
+        "Question": "The Gate way of India is"
     },
     {
-        "Sr. No.": "95",
-        "Question": "Which is considered as the biggest port of India",
+        "Correct Answer": "Option 4",
         "Option 1": "Kolkata",
         "Option 2": "Cochin",
         "Option 3": "Chennai",
         "Option 4": "Mumbai",
-        "Correct Answer": "D",
-        "undefined": "Mumbai",
-        "Category": "G.K"
+        "Question": "Which is considered as the biggest port of India"
     },
     {
-        "Sr. No.": "96",
-        "Question": "Pink city in India is",
+        "Correct Answer": "Option 4",
         "Option 1": "Mysore",
         "Option 2": "Karnataka",
         "Option 3": "Hyderabad",
         "Option 4": "Jaipur",
-        "Correct Answer": "D",
-        "undefined": "Jaipur",
-        "Category": "G.K"
+        "Question": "Pink city in India is"
     },
     {
-        "Sr. No.": "97",
-        "Question": "Deficiency of Iron leads to",
+        "Correct Answer": "Option 4",
         "Option 1": "Rickets",
         "Option 2": "Malaria",
         "Option 3": "Dental Cavity",
         "Option 4": "Anaemia",
-        "Correct Answer": "D",
-        "undefined": "Anaemia",
-        "Category": "G.K"
+        "Question": "Deficiency of Iron leads to"
     },
     {
-        "Sr. No.": "98",
-        "Question": "The state which has desert in India is",
+        "Correct Answer": "Option 1",
         "Option 1": "Rajasthan",
         "Option 2": "Punjab",
         "Option 3": "Uttar Pradesh",
         "Option 4": "Madhya Pradesh",
-        "Correct Answer": "A",
-        "undefined": "Rajasthan",
-        "Category": "G.K"
+        "Question": "The state which has desert in India is"
     },
     {
-        "Sr. No.": "99",
-        "Question": "The headquarters of the coffee board of India is",
+        "Correct Answer": "Option 3",
         "Option 1": "Mysore",
         "Option 2": "Kolkata",
         "Option 3": "Bangalore",
         "Option 4": "Cochin",
-        "Correct Answer": "C",
-        "undefined": "Bangalore",
-        "Category": "G.K"
+        "Question": "The headquarters of the coffee board of India is"
     },
     {
-        "Sr. No.": "100",
-        "Question": "The largest river in India is",
+        "Correct Answer": "Option 3",
         "Option 1": " Yamuna",
         "Option 2": "Kaveri",
         "Option 3": "Ganga",
         "Option 4": "Bramaputra",
-        "Correct Answer": "C",
-        "undefined": "Ganga",
-        "Category": "G.K"
+        "Question": "The largest river in India is"
     }
 ]
