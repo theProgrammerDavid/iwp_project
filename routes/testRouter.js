@@ -6,8 +6,8 @@ const Offense = require('../models/Offense');
 const Question = require('../models/Question');
 const User = require('../models/User')
 
-function randomNumberGenerator() {
-    var x = Math.floor((Math.random() * 20) + 1);
+function randomNumberGenerator(){
+    var x = Math.floor((Math.random() * 100) + 1);
     return x
 }
 router.get('/', (req, res) => {
@@ -55,7 +55,13 @@ router.post('/', async function (req, res) {
     console.log(req.body.testid);
     mongoose.model('Question').findOne({ testid: req.body.testid }, function (err, doc) {
         if (doc) {
-            res.render('testpage', { layout: 'layout/afterSignIn' });
+            rand = randomNumberGenerator()
+    Question.find({"Serial Number": rand}).then((question) => {
+    console.log(question['Option 1'])
+        res.render("testpage", {layout: 'layout/afterSignIn', question: question})
+    }).catch((e)=>{
+        res.status(500)
+    })
         }
         else {
 
