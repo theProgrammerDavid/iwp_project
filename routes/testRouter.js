@@ -4,19 +4,26 @@ const router = express.Router()
 const mongoose = require('mongoose');
 const Offense = require('../models/Offense');
 const Question = require('../models/Question');
+const User = require('../models/User')
 
-
+function randomNumberGenerator(){
+    var x = Math.floor((Math.random() * 20) + 1);
+    return x
+}
 router.get('/', (req, res) => {
-    Question.find({}).then((questions) => {
-        res.send(questions)
+    rand = randomNumberGenerator()
+    Question.find({"Serial Number": rand}).then((question) => {
+        res.send(question)
     }).catch((e)=>{
         res.status(500)
     })
 })
 
 
-router.post('/make', async function (req, res) {
+router.get('/make', async function (req, res) {
+    count = 0;
     xx.forEach(function (d) {
+        count = count + 1;
         let q = new Question({
             "Correct Answer": d["Correct Answer"],
             "Option 1": d["Option 1"],
@@ -25,8 +32,8 @@ router.post('/make', async function (req, res) {
             "Option 4": d["Option 4"],
             "Question": d["Question"],
             testid: 1,
+            "Serial Number": count
         });
-
         q.save()
             .then(doc => {
                 console.log(doc)
