@@ -11,6 +11,60 @@ function randomNumberGenerator() {
     var x = Math.floor((Math.random() * 100) + 1);
     return x
 }
+
+async function positiveScore(_email, _testid, positiveScore) {
+    Score.find({
+        email: _email,
+        testid: _testid,  // search query
+    })
+        .then(doc => {
+            if (doc) {
+                //if doc is not null, it means that the user has a previous score
+
+
+                Score
+                    .findOneAndUpdate(
+                        {
+                            email: _email,
+                            testid: _testid,// search query
+                        },
+                        {
+                            score: score + positiveScore   // field:values to update
+                        },
+                        {
+                            new: true,                       // return updated doc
+                            // validate before update
+                        })
+                    .then(doc => {
+                        console.log(doc)
+                    })
+                    .catch(err => {
+                        console.error(err)
+                    })
+
+            }
+            else {
+                //user does not have a previous score. 
+                //Thus we need to create a score for the user
+
+                let s = new Score({
+                    email: _email,
+                })
+
+                s.save()
+                    .then(doc => {
+                        console.log(doc)
+                    })
+                    .catch(err => {
+                        console.error(err)
+                    })
+            }
+        })
+        .catch(err => {
+            console.error(err)
+        })
+}
+
 router.get('/', (req, res) => {
     console.log('qss');
     rand = randomNumberGenerator()

@@ -3,11 +3,11 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const ScoreSchema = new Schema({
-    Email: {
+    email: {
         type: String,
         required: true
     },
-    Score: {
+    score: {
         type: Number,
         required: true
     },
