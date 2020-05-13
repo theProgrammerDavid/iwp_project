@@ -6,7 +6,7 @@ const Offense = require('../models/Offense');
 const Question = require('../models/Question');
 const User = require('../models/User')
 
-function randomNumberGenerator(){
+function randomNumberGenerator() {
     var x = Math.floor((Math.random() * 100) + 1);
     return x
 }
@@ -18,7 +18,7 @@ router.get('/', (req, res) => {
         console.log(q)
         res.render("testpage", {
             layout: 'layout/afterSignIn',
-            op1: q['Option 1'], op2: q["Option 2"], op3: q["Option 3"], op4: q["Option 4"]
+            text: q["Question"], op1: q['Option 1'], op2: q["Option 2"], op3: q["Option 3"], op4: q["Option 4"]
         })
     }).catch((e) => {
         res.status(500)
@@ -56,12 +56,13 @@ router.post('/', async function (req, res) {
     mongoose.model('Question').findOne({ testid: req.body.testid }, function (err, doc) {
         if (doc) {
             rand = randomNumberGenerator()
-    Question.find({"Serial Number": rand}).then((question) => {
-    console.log(question['Option 1'])
-        res.render("testpage", {layout: 'layout/afterSignIn', question: question})
-    }).catch((e)=>{
-        res.status(500)
-    })
+            Question.find({ "Serial Number": rand }).then((question) => {
+                console.log(question['Option 1'])
+                //res.render("testpage", {layout: 'layout/afterSignIn', question: question})
+                res.redirect('/home/test');
+            }).catch((e) => {
+                res.status(500)
+            })
         }
         else {
 
