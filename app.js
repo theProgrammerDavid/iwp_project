@@ -13,7 +13,8 @@ const Database = require('./util/database');
 const loginRouter = require('./routes/loginRouter');
 const signupRouter = require('./routes/signupRouter');
 const homepageRouter = require('./routes/homeRouter');
-const forgotPasswordRouter = require('./routes/forgotPassRouter')
+const forgotPasswordRouter = require('./routes/forgotPassRouter');
+const adminRouter = require('./routes/adminRouter');
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
@@ -28,6 +29,7 @@ app.use(express.static(__dirname + '/static'))
 app.use('/login', loginRouter);
 app.use('/forgot', forgotPasswordRouter);
 app.use('/signup', signupRouter);
+app.use('/admin', adminRouter);
 app.use('/home', homepageRouter);
 app.get('/about', (req, res) => {
     res.render('about', { layout: 'layout/beforeSignIn' });
