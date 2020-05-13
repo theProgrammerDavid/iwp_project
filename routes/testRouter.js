@@ -65,22 +65,6 @@ async function positiveScore(_email, _testid, positiveScore) {
         })
 }
 
-router.get('/', (req, res) => {
-    console.log('qss');
-    rand = randomNumberGenerator()
-    Question.findOne({ "Serial Number": rand.toString() }).then((q) => {
-        console.log('here');
-        console.log(q)
-        res.render("testpage", {
-            layout: 'layout/afterSignIn',
-            text: q["Question"], op1: q['Option 1'], op2: q["Option 2"], op3: q["Option 3"], op4: q["Option 4"]
-        })
-    }).catch((e) => {
-        res.status(500)
-    })
-})
-
-
 router.get('/make', async function (req, res) {
     count = 0;
     xx.forEach(function (d) {
@@ -120,14 +104,16 @@ router.post('/', async function (req, res) {
             })
         }
         else {
-
-            res.send('test not found');
+             res.send('test not found');
         }
     })
-
-
-
 });
+
+
+router.post(' / ', function(req,res){
+    console.log(req.body)
+    
+})
 
 /* router.post('/event', async function (req, res) {
     console.log('received cheating reuqest on ' + req.session.email);
