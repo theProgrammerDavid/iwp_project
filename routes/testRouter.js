@@ -13,7 +13,7 @@ function randomNumberGenerator(){
 router.get('/', (req, res) => {
     rand = randomNumberGenerator()
     Question.find({"Serial Number": rand}).then((question) => {
-        console.log(question)
+    console.log(question['Option 1'])
         res.render("testpage", {layout: 'layout/afterSignIn', question: question})
     }).catch((e)=>{
         res.status(500)
@@ -50,7 +50,13 @@ router.post('/', async function (req, res) {
     console.log(req.body.testid);
     mongoose.model('Question').findOne({ testid: req.body.testid }, function (err, doc) {
         if (doc) {
-            res.render('testpage', { layout: 'layout/afterSignIn' });
+            rand = randomNumberGenerator()
+    Question.find({"Serial Number": rand}).then((question) => {
+    console.log(question['Option 1'])
+        res.render("testpage", {layout: 'layout/afterSignIn', question: question})
+    }).catch((e)=>{
+        res.status(500)
+    })
         }
         else {
 
