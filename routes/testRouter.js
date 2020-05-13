@@ -11,11 +11,16 @@ function randomNumberGenerator(){
     return x
 }
 router.get('/', (req, res) => {
+    console.log('qss');
     rand = randomNumberGenerator()
-    Question.find({"Serial Number": rand}).then((question) => {
-    console.log(question['Option 1'])
-        res.render("testpage", {layout: 'layout/afterSignIn', question: question})
-    }).catch((e)=>{
+    Question.findOne({ "Serial Number": rand.toString() }).then((q) => {
+        console.log('here');
+        console.log(q)
+        res.render("testpage", {
+            layout: 'layout/afterSignIn',
+            op1: q['Option 1'], op2: q["Option 2"], op3: q["Option 3"], op4: q["Option 4"]
+        })
+    }).catch((e) => {
         res.status(500)
     })
 })
