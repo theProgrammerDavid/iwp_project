@@ -13,7 +13,7 @@ function randomNumberGenerator(){
 router.get('/', (req, res) => {
     rand = randomNumberGenerator()
     Question.find({"Serial Number": rand}).then((question) => {
-        console.log(question["Option"])
+        console.log(question)
         res.render("testpage", {layout: 'layout/afterSignIn', question: question})
     }).catch((e)=>{
         res.status(500)
