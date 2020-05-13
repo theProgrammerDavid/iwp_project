@@ -36,6 +36,22 @@ router.post('/add/question', function (req, res) {
         })
 });
 
+router.post('/add/user', function (req, res) {
+    let newUser = new User({
+        Name: req.body.name,
+        Email: req.body.email,
+        Phone: req.body.phoneNumber,
+        Password: await hashPassword(req.body.password)
+    });
+    newUser.save().then(doc => {
+        console.log('Created New User');
+        res.send('Created New User');
+    }).catch(err => {
+        console.log('Error creating new user\n' + err);
+        res.send(err);
+    })
+});
+
 router.get('/login', function (req, res) {
     res.render('adminLogin', { layout: 'layout/beforeAdminLogin' });
 })
