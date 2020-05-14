@@ -1,32 +1,32 @@
 
 const nodejs = require('express')
 const bcrypt = require('bcrypt');
-const nodejs_backend_router = nodejs.Router()
+const nodejs_backend = nodejs.Router()
 const Question = require('../models/Question');
 const User = require('../models/User');
 const hashPassword = require('../util/hash')['hashPassword'];
 
 const adminPass = 'admin';
 
-nodejs_backend_router.get('/', function (req, res) {
+nodejs_backend.get('/', function (req, res) {
     if (req.session.username === 'admin')
         res.render('adminHome', { layout: 'layout/afterAdminLogin' });
     else res.redirect('/admin/login');
 })
-nodejs_backend_router.get('/logout', (req, res) => {
+nodejs_backend.get('/logout', (req, res) => {
     req.session.destroy((err) => { console.log(err) })
     console.log('session destroyed');
     res.redirect('/admin/login');
 })
 
-nodejs_backend_router.post('/reserTimer', async function (req, res) {
+nodejs_backend.post('/reserTimer', async function (req, res) {
     User.updateMany({}, { Timer: 60 * 60 }, {}, async function (err, doc) {
         if (err) { res.send(err); }
         if (doc) { res.send('ok'); }
     });
 });
 
-nodejs_backend_router.post('/add/question', function (req, res) {
+nodejs_backend.post('/add/question', function (req, res) {
     let q = new Question({
         "Question": req.body.question,
         "Option 1": req.body.option1,
@@ -47,7 +47,7 @@ nodejs_backend_router.post('/add/question', function (req, res) {
         })
 });
 
-nodejs_backend_router.post('/add/user', async function (req, res) {
+nodejs_backend.post('/add/user', async function (req, res) {
     let _pass = await hashPassword(req.body.password);
     let newUser = new User({
         Name: req.body.name,
@@ -64,10 +64,10 @@ nodejs_backend_router.post('/add/user', async function (req, res) {
     })
 });
 
-nodejs_backend_router.get('/login', function (req, res) {
+nodejs_backend.get('/login', function (req, res) {
     res.render('adminLogin', { layout: 'layout/beforeAdminLogin' });
 })
-nodejs_backend_router.post('/login', function (req, res) {
+nodejs_backend.post('/login', function (req, res) {
     console.log(req.body)
     if (req.body.username === 'admin' && req.body.password === adminPass) {
         req.session.username = 'admin';
@@ -76,4 +76,4 @@ nodejs_backend_router.post('/login', function (req, res) {
     else
         res.render('adminLogin', { layout: 'layout/beforeAdminLogin', msg: 'Invalid Credentials' });
 })
-module.exports = nodejs_backend_router;
+module.exports = nodejs_backend;
