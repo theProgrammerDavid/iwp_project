@@ -93,11 +93,21 @@ router.get('/make', async function (req, res) {
 router.post('/', async function (req, res) {
     console.log(req.body.testid);
     console.log(req.body)
+
+    Question.findOne({"Serial Number": req.body.number}).then(
+        (q)=>{
+            console.log(q["Correct Answer"])
+            console.log(req.body.option)
+            if(req.body.option == q["Correct Answer"]){
+                positiveScore(req.session.email, 1, 1)
+                console.log("correct Answer")
+            }
+    })
+
     mongoose.model('Question').findOne({ testid: req.body.testid }, function (err, doc) {
         if (doc) {
             rand = randomNumberGenerator()
-            Question.find({ "Serial Number": rand }).then((question) => {
-                console.log(question['Option 1'])
+            Question.findOne({ "Serial Number": rand }).then((question) => {
                 //res.render("testpage", {layout: 'layout/afterSignIn', question: question})
                 res.redirect('/home/test');
             }).catch((e) => {
@@ -117,16 +127,15 @@ router.get('/', async function (req, res) {
             res.send('Timer expired')
         }
         else {
-
             rand = randomNumberGenerator()
             Question.findOne({ "Serial Number": rand.toString() })
                 .then((q) => {
-                    console.log(q);
                     res.render("testpage", {
                         layout: 'layout/afterSignIn',
                         text: q["Question"], op1: q['Option 1'],
                         op2: q["Option 2"], op3: q["Option 3"],
-                        op4: q["Option 4"]
+                        op4: q["Option 4"], number: q['Serial Number'],
+                        testid: q["testid"]
                     })
                 })
                 .catch((e) => console.log(e));
@@ -136,7 +145,6 @@ router.get('/', async function (req, res) {
         rand = randomNumberGenerator()
         Question.findOne({ "Serial Number": rand.toString() })
             .then((q) => {
-                console.log(q);
                 res.render("testpage", {
                     layout: 'layout/afterSignIn',
                     text: q["Question"], op1: q['Option 1'],
