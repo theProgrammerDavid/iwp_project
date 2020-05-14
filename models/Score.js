@@ -5,11 +5,11 @@ const Schema = mongoose.Schema;
 const ScoreSchema = new Schema({
     email: {
         type: String,
-        required: true
+        
     },
-    score: {
+    points: {
         type: Number,
-        required: true
+        
     },
     testid:String
 

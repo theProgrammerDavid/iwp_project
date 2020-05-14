@@ -12,57 +12,44 @@ function randomNumberGenerator() {
     return x
 }
 
-async function positiveScore(_email, _testid, posScore) {
-    Score.find({
-        email: _email,
-        testid: _testid,  // search query
-    })
-        .then(doc => {
-            if (doc) {
-                //if doc is not null, it means that the user has a previous score
-
-
-                Score
-                    .findOneAndUpdate(
-                        {
-                            email: _email,
-                            testid: _testid,// search query
-                        },
-                        {
-                            score: score + posScore   // field:values to update
-                        },
-                        {
-                            new: true,                       // return updated doc
-                            // validate before update
-                        })
-                    .then(doc => {
-                        console.log(doc)
-                    })
-                    .catch(err => {
-                        console.error(err)
-                    })
-
-            }
-            else {
-                //user does not have a previous score. 
-                //Thus we need to create a score for the user
-
-                let s = new Score({
-                    email: _email,
+async function positiveScore(eemail, ttestid, posScore) {
+    console.log('email is fun is ' + eemail)
+    const s = await Score.findOne({ email: eemail, testid: ttestid });
+    if (s) {
+        let x = s.points;
+        console.log('score already exists');
+        Score
+            .findOneAndUpdate(
+                {
+                    email: eemail, testid: ttestid  // search query
+                },
+                {
+                   points: x+1   // field:values to update
+                },
+                {
+                                           // return updated doc
+                                // validate before update
                 })
+            .then(doc => {
+               
+            })
+            .catch(err => {
+                console.error(err)
+            })
+    }
+    else {
+        let ss = new Score({
+            email: eemail, testid: ttestid, points: posScore
+        })
 
-                s.save()
-                    .then(doc => {
-                        console.log(doc)
-                    })
-                    .catch(err => {
-                        console.error(err)
-                    })
-            }
-        })
-        .catch(err => {
-            console.error(err)
-        })
+        ss.save()
+            .then(doc => {
+                console.log(doc)
+            })
+            .catch(err => {
+                console.error(err)
+            })
+    }
 }
 
 router.get('/make', async function (req, res) {
@@ -94,42 +81,54 @@ router.post('/', async function (req, res) {
     console.log(req.body.testid);
     console.log(req.body)
 
-    Question.findOne({"Serial Number": req.body.number}).then(
-        (q)=>{
-            console.log(q["Correct Answer"])
-            console.log(req.body.option)
-            if(req.body.option == q["Correct Answer"]){
-                positiveScore(req.session.email, 1, 1)
-                console.log("correct Answer")
-            }
-    })
+    Question.findOne({ "Serial Number": req.body.number }).then(
+        (q) => {
+            if (q) {
+                console.log(q["Correct Answer"])
+                console.log(req.body.option)
+                if (req.body.option == q["Correct Answer"]) {
 
-    mongoose.model('Question').findOne({ testid: req.body.testid }, function (err, doc) {
-        if (doc) {
-            rand = randomNumberGenerator()
-            Question.findOne({ "Serial Number": rand }).then((question) => {
-                //res.render("testpage", {layout: 'layout/afterSignIn', question: question})
-                res.redirect('/home/test');
-            }).catch((e) => {
-                res.status(500)
-            })
-        }
-        else {
-            res.send('test not found');
-        }
-    })
+                    positiveScore(req.session.email, 1, 1)
+                    console.log("correct Answer")
+                    //res.redirect('/home/test');
+                }
+            }
+            else {
+                console.log('q is null')
+                //res.redirect('/home/test');
+            }
+            res.redirect('/home/test');
+        })
+
+    // Question.findOne({ testid: 1 }, function (err, doc) {
+    //     if (doc) {
+    //         rand = randomNumberGenerator()
+    //         Question.findOne({ "Serial Number": rand }).then((question) => {
+    //             //res.render("testpage", {layout: 'layout/afterSignIn', question: question})
+    //             res.redirect('/home/test');
+    //         }).catch((e) => {
+    //             res.status(500)
+    //         })
+    //     }
+    //     else {
+    //         res.send('question not found');
+    //     }
+    // })
 });
 
 router.get('/', async function (req, res) {
+    console.log('email is ' + req.session.email);
     const u = await User.findOne({ email: req.session.email });
     if (u) {
         if (u.Timer <= 0) {
             res.send('Timer expired')
         }
         else {
-            rand = randomNumberGenerator()
+            rand = randomNumberGenerator();
             Question.findOne({ "Serial Number": rand.toString() })
                 .then((q) => {
+                    //console.log('q is ');
+                    // console.log(q);
                     res.render("testpage", {
                         layout: 'layout/afterSignIn',
                         text: q["Question"], op1: q['Option 1'],
@@ -149,7 +148,8 @@ router.get('/', async function (req, res) {
                     layout: 'layout/afterSignIn',
                     text: q["Question"], op1: q['Option 1'],
                     op2: q["Option 2"], op3: q["Option 3"],
-                    op4: q["Option 4"]
+                    op4: q["Option 4"], number: q['Serial Number'],
+                    testid: q["testid"]
                 })
             })
             .catch((e) => console.log(e));
