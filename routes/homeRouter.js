@@ -14,11 +14,39 @@ router.get('/', (req, res) => {
 
 router.use('/test', testRouter);
 
+async function startTimer(times, eemail) {
+    if (times < 1) {
+        return;
+    }
+
+    setTimeout(async function () {
+
+        // Do something here
+        const u = await User.findOne({ email: eemail });
+        if(u){
+            const result = await User.findOneAndUpdate({Timer: Timer - 1});
+        }
+
+        startTimer(times - 1, eemail);
+    }, 1000);
+}
+
 router.post('/testid', async function (req, res) {
     console.log(req.body.testid);
     mongoose.model('Question').findOne({ testid: req.body.testid }, function (err, doc) {
         if (doc) {
-            //rand = randomNumberGenerator()
+            Question
+                .find({
+                    email: req.session.email,
+                    // search query
+                })
+                .then(doc => {
+                    console.log(doc)
+                })
+                .catch(err => {
+                    console.error(err)
+                })
+            startTimer(60 * 60, req.session.email);
             res.redirect('/home/test');
         }
         else {

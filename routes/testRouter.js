@@ -110,18 +110,43 @@ router.post('/', async function (req, res) {
     })
 });
 
-router.get('/', (req, res) => {
-    rand = randomNumberGenerator()
-    Question.findOne({ "Serial Number": rand.toString() })
-        .then((q) => {
-            console.log(q);
-            res.render("testpage", { 
-                layout: 'layout/afterSignIn', 
-                text: q["Question"], op1: q['Option 1'], 
-                op2: q["Option 2"], op3: q["Option 3"], 
-                op4: q["Option 4"] })
-        })
-        .catch((e) => console.log(e));
+router.get('/', async function (req, res) {
+    const u = await User.findOne({ email: req.session.email });
+    if (u) {
+        if (u.Timer <= 0) {
+            res.send('Timer expired')
+        }
+        else {
+
+            rand = randomNumberGenerator()
+            Question.findOne({ "Serial Number": rand.toString() })
+                .then((q) => {
+                    console.log(q);
+                    res.render("testpage", {
+                        layout: 'layout/afterSignIn',
+                        text: q["Question"], op1: q['Option 1'],
+                        op2: q["Option 2"], op3: q["Option 3"],
+                        op4: q["Option 4"]
+                    })
+                })
+                .catch((e) => console.log(e));
+        }
+    }
+    else {
+        rand = randomNumberGenerator()
+        Question.findOne({ "Serial Number": rand.toString() })
+            .then((q) => {
+                console.log(q);
+                res.render("testpage", {
+                    layout: 'layout/afterSignIn',
+                    text: q["Question"], op1: q['Option 1'],
+                    op2: q["Option 2"], op3: q["Option 3"],
+                    op4: q["Option 4"]
+                })
+            })
+            .catch((e) => console.log(e));
+    }
+
 })
 
 //  router.post('/event', async function (req, res) {
