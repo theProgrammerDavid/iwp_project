@@ -12,7 +12,7 @@ function randomNumberGenerator() {
     return x
 }
 
-async function positiveScore(_email, _testid, positiveScore) {
+async function positiveScore(_email, _testid, posScore) {
     Score.find({
         email: _email,
         testid: _testid,  // search query
@@ -29,7 +29,7 @@ async function positiveScore(_email, _testid, positiveScore) {
                             testid: _testid,// search query
                         },
                         {
-                            score: score + positiveScore   // field:values to update
+                            score: score + posScore   // field:values to update
                         },
                         {
                             new: true,                       // return updated doc

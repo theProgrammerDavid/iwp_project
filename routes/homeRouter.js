@@ -4,6 +4,7 @@ const router = express.Router()
 const mongoose = require('mongoose');
 const Question = require('../models/Question');
 const testRouter = require('./testRouter');
+const User = require('../models/User');
 const Score = require('../models/Score');
 
 router.get('/', (req, res) => {
