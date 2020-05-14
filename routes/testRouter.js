@@ -12,7 +12,7 @@ function randomNumberGenerator() {
     return x
 }
 
-async function positiveScore(_email, _testid, positiveScore) {
+async function positiveScore(_email, _testid, posScore) {
     Score.find({
         email: _email,
         testid: _testid,  // search query
@@ -29,7 +29,7 @@ async function positiveScore(_email, _testid, positiveScore) {
                             testid: _testid,// search query
                         },
                         {
-                            score: score + positiveScore   // field:values to update
+                            score: score + posScore   // field:values to update
                         },
                         {
                             new: true,                       // return updated doc
@@ -104,15 +104,23 @@ router.post('/', async function (req, res) {
             })
         }
         else {
-             res.send('test not found');
+            res.send('test not found');
         }
     })
 });
 
-
-router.post(' / ', function(req,res){
-    console.log(req.body)
-    
+router.get('/', (req, res) => {
+    rand = randomNumberGenerator()
+    Question.findOne({ "Serial Number": rand.toString() })
+        .then((q) => {
+            console.log(q);
+            res.render("testpage", { 
+                layout: 'layout/afterSignIn', 
+                text: q["Question"], op1: q['Option 1'], 
+                op2: q["Option 2"], op3: q["Option 3"], 
+                op4: q["Option 4"] })
+        })
+        .catch((e) => console.log(e));
 })
 
 //  router.post('/event', async function (req, res) {
@@ -123,5 +131,5 @@ router.post(' / ', function(req,res){
 
 //     res.send('confirmed');
 // });
- 
+
 module.exports = router;
