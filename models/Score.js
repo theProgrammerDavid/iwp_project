@@ -3,16 +3,17 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const ScoreSchema = new Schema({
-    Email: {
+    email: {
         type: String,
-        required: true
+        
     },
-    Score: {
+    points: {
         type: Number,
-        required: true
-    }
+        
+    },
+    testid:String
 
 });
 
 
-module.exports = mongoose.model('Score', UserSchema);
+module.exports = mongoose.model('Score', ScoreSchema);

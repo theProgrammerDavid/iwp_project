@@ -3,6 +3,10 @@ const Schema = mongoose.Schema;
 
 const QuestionSchema = new Schema({
 
+	"Serial Number": {
+		type: "string"
+	},
+
 	"Question": {
 		type: "string",
 	},

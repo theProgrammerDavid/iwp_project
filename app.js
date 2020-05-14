@@ -4,16 +4,19 @@ const session = require('express-session');
 const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
-
+require('dotenv').config();
 const app = express();
 
-const port = 3000;
+const port = process.env.PORT ||3000;
 
 const Database = require('./util/database');
 const loginRouter = require('./routes/loginRouter');
 const signupRouter = require('./routes/signupRouter');
 const homepageRouter = require('./routes/homeRouter');
 const forgotPasswordRouter = require('./routes/forgotPassRouter')
+const questionRouter = require('./routes/testRouter')
+
+const adminRouter = require('./routes/adminRouter');
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
@@ -28,7 +31,9 @@ app.use(express.static(__dirname + '/static'))
 app.use('/login', loginRouter);
 app.use('/forgot', forgotPasswordRouter);
 app.use('/signup', signupRouter);
+app.use('/admin', adminRouter);
 app.use('/home', homepageRouter);
+app.use('/question', questionRouter)
 app.get('/about', (req, res) => {
     res.render('about', { layout: 'layout/beforeSignIn' });
 });

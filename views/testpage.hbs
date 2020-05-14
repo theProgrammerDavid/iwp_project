@@ -1,3 +1,54 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        console.log('doc is read');
+        document.addEventListener("visibilitychange", function (e) {
+            console.log('cheating');
+            const Url = window.location.href + '/event';
+
+            $.post(Url,
+                {
+                    event: 'window change'
+                },
+                function (data, status) {
+                    console.log(status)
+                    alert("Caught Cheating. Test will end");
+                    window.location.replace("http://localhost:3000/home")
+                });
+        });
+    });
+
+
+
+</script>
+<div class="login-page">
+    <div class="form">
+        <h2>Question </h2>
+        <h3>{{text}}</h3>
+        <form action="/question" method="post" class="question-form">
+            <div class="container">
+
+                <p>Please select the correct option:</p>
+                <input type="hidden" name="Question" value="{{text}}">
+                <input type="hidden" name="number" value="{{number}}">
+                <input type="hidden" name="testid" value="{{testid}}">
+                <input type="radio" id="Option-1" name="option" value="Option 1">
+                <label for="Option-1">{{op1}}</label><br>
+                <input type="radio" id="Option-2" name="option" value="Option 2">
+                <label for="Option-2">{{op2}}</label><br>
+                <input type="radio" id="Option-3" name="option" value="Option 3">
+                <label for="Option-3">{{op3}}</label><br>
+                <input type="radio" id="Option-4" name="option" value="Option 4">
+                <label for="Option-4">{{op4}}</label><br>
+                <button type="submit" id="answerButton">answer</button>
+
+            </div>
+
+        </form>
+        <br>
+    </div>
+</div>
+
+
 <div class="countdown-timer"></div>
 <script type="text/javascript" src="/js/test.js"></script>
