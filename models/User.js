@@ -29,7 +29,10 @@ const UserSchema = new Schema({
 			required: true,
 			select: true,
 		},
-
+		Timer:{
+			type: Number,
+			default: 60*60,
+		}
 
 });
 
