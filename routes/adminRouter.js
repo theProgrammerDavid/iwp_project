@@ -10,10 +10,21 @@ const adminPass = 'admin';
 
 router.get('/', function (req, res) {
     if (req.session.username === 'admin')
-        res.render('adminHome', { layout: 'layout/beforeAdminLogin' });
-    // res.render('adminLogin', { layout: 'layout/beforeAdminLogin' });
+        res.render('adminHome', { layout: 'layout/afterAdminLogin' });
     else res.redirect('/admin/login');
 })
+router.get('/logout', (req, res) => {
+    req.session.destroy((err) => { console.log(err) })
+    console.log('session destroyed');
+    res.redirect('/admin/login');
+})
+
+router.post('/reserTimer', async function (req, res) {
+    User.updateMany({}, { Timer: 60 * 60 }, {}, async function (err, doc) {
+        if (err) { res.send(err); }
+        if (doc) { res.send('ok'); }
+    });
+});
 
 router.post('/add/question', function (req, res) {
     let q = new Question({
