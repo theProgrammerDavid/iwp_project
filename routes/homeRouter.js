@@ -1,18 +1,18 @@
 
-const express = require('express')
-const router = express.Router()
+const nodejs = require('express')
+const nodejs_backend = nodejs.Router()
 const mongoose = require('mongoose');
 const Question = require('../models/Question');
 const testRouter = require('./testRouter');
 const User = require('../models/User');
 const Score = require('../models/Score');
 
-router.get('/', (req, res) => {
+nodejs_backend.get('/', (req, res) => {
     if (req.session.email) { res.render('homepage', { layout: 'layout/afterSignIn' }); }
     else { res.redirect('/login'); }
 });
 
-router.use('/test', testRouter);
+nodejs_backend.use('/test', testRouter);
 
 async function startTimer(times, eemail) {
     if (times < 1) {
@@ -31,7 +31,7 @@ async function startTimer(times, eemail) {
     }, 1000);
 }
 
-router.post('/testid', async function (req, res) {
+nodejs_backend.post('/testid', async function (req, res) {
     console.log(req.body.testid);
     mongoose.model('Question').findOne({ testid: req.body.testid }, function (err, doc) {
         if (doc) {
@@ -58,7 +58,7 @@ router.post('/testid', async function (req, res) {
 
 
 });
-router.post('/grades', async function (req, res) {
+nodejs_backend.post('/grades', async function (req, res) {
     console.log(req.body.testid);
     Score
         .findOne({
@@ -78,4 +78,4 @@ router.post('/grades', async function (req, res) {
         })
 
 });
-module.exports = router;
+module.exports = nodejs_backend;

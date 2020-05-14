@@ -1,17 +1,17 @@
 
-const express = require('express')
+const nodejs = require('express')
 const bcrypt = require('bcrypt');
-const router = express.Router()
+const nodejs_backend = nodejs.Router()
 const hashPassword = require('../util/hash')['hashPassword'];
 
 const User = require('../models/User');
 
-router.get('/', (req, res) => {
+nodejs_backend.get('/', (req, res) => {
     res.render('signup', { layout: 'layout/beforeSignIn' });
 });
 
 
-router.post('/', async function (req, res) {
+nodejs_backend.post('/', async function (req, res) {
     //console.log(req.body);
     //const hash = await getHash(req);
     console.log(req.body)
@@ -31,4 +31,4 @@ router.post('/', async function (req, res) {
     //res.render('login', { layout: 'layout/beforeSignIn' });
 });
 
-module.exports = router;
+module.exports = nodejs_backend;

@@ -1,19 +1,19 @@
 
-const express = require('express')
+const nodejs = require('express')
 const bcrypt = require('bcrypt');
-const router = express.Router()
+const nodejs_backend = nodejs.Router()
 const hashPassword = require('../util/hash')['hashPassword'];
 const User = require('../models/User');
 
 
-router.get('/', (req, res) => {
+nodejs_backend.get('/', (req, res) => {
     if (req.session.email) { res.redirect('/home'); }
     else
         res.render('login', { layout: 'layout/beforeSignIn' });
 });
 
 
-router.post('/', async function (req, res) {
+nodejs_backend.post('/', async function (req, res) {
 
     const _pass = await hashPassword(req.body.password);
 
@@ -34,4 +34,4 @@ router.post('/', async function (req, res) {
 
 });
 
-module.exports = router;
+module.exports = nodejs_backend;

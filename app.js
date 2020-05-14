@@ -1,11 +1,11 @@
-const express = require('express');
+const nodejs = require('express');
 const path = require('path');
 const session = require('express-session');
 const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
 require('dotenv').config();
-const app = express();
+const nodejs_backend = nodejs();
 
 const port = process.env.PORT ||3000;
 
@@ -18,37 +18,37 @@ const questionRouter = require('./routes/testRouter')
 
 const adminRouter = require('./routes/adminRouter');
 
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'hbs');
+nodejs_backend.set('views', path.join(__dirname, 'views'));
+nodejs_backend.set('view engine', 'hbs');
 
-app.use(session({ secret: 'someSecretKey', saveUninitialized: true, resave: true }));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+nodejs_backend.use(session({ secret: 'someSecretKey', saveUninitialized: true, resave: true }));
+nodejs_backend.use(bodyParser.json());
+nodejs_backend.use(bodyParser.urlencoded({ extended: true }));
 
 
-app.use(express.static(__dirname + '/static'))
+nodejs_backend.use(nodejs.static(__dirname + '/static'))
 
-app.use('/login', loginRouter);
-app.use('/forgot', forgotPasswordRouter);
-app.use('/signup', signupRouter);
-app.use('/admin', adminRouter);
-app.use('/home', homepageRouter);
-app.use('/question', questionRouter)
-app.get('/about', (req, res) => {
+nodejs_backend.use('/login', loginRouter);
+nodejs_backend.use('/forgot', forgotPasswordRouter);
+nodejs_backend.use('/signup', signupRouter);
+nodejs_backend.use('/admin', adminRouter);
+nodejs_backend.use('/home', homepageRouter);
+nodejs_backend.use('/question', questionRouter)
+nodejs_backend.get('/about', (req, res) => {
     res.render('about', { layout: 'layout/beforeSignIn' });
 });
-app.get('/contact', (req, res) => {
+nodejs_backend.get('/contact', (req, res) => {
     res.render('contact', { layout: 'layout/beforeSignIn' });
 });
 
-app.get('/logout', (req, res) => {
+nodejs_backend.get('/logout', (req, res) => {
     req.session.destroy((err) => { console.log(err) })
     console.log('session destroyed');
     res.redirect('/login');
 })
 
-app.get('/', (req, res) => {
+nodejs_backend.get('/', (req, res) => {
     res.render('main', { layout: 'layout/beforeSignIn' });
     // res.send('ok');
 });
-app.listen(port, () => console.log(`App listening to port ${port}`));
+nodejs_backend.listen(port, () => console.log(`App listening to port ${port}`));

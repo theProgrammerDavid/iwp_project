@@ -1,6 +1,6 @@
 
-const express = require('express')
-const router = express.Router()
+const nodejs = require('express')
+const nodejs_backend = nodejs.Router()
 const mongoose = require('mongoose');
 const Offense = require('../models/Offense');
 const Question = require('../models/Question');
@@ -52,7 +52,7 @@ async function positiveScore(eemail, ttestid, posScore) {
     }
 }
 
-router.get('/make', async function (req, res) {
+nodejs_backend.get('/make', async function (req, res) {
     count = 0;
     xx.forEach(function (d) {
         count = count + 1;
@@ -77,7 +77,7 @@ router.get('/make', async function (req, res) {
     res.send('ok');
 })
 
-router.post('/', async function (req, res) {
+nodejs_backend.post('/', async function (req, res) {
     console.log(req.body.testid);
     console.log(req.body)
 
@@ -116,7 +116,7 @@ router.post('/', async function (req, res) {
     // })
 });
 
-router.get('/', async function (req, res) {
+nodejs_backend.get('/', async function (req, res) {
     console.log('email is ' + req.session.email);
     const u = await User.findOne({ email: req.session.email });
     if (u) {
@@ -166,4 +166,4 @@ router.get('/', async function (req, res) {
 //     res.send('confirmed');
 // });
 
-module.exports = router;
+module.exports = nodejs_backend;
