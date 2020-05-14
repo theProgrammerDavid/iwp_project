@@ -92,6 +92,7 @@ router.get('/make', async function (req, res) {
 
 router.post('/', async function (req, res) {
     console.log(req.body.testid);
+    console.log(req.body)
     mongoose.model('Question').findOne({ testid: req.body.testid }, function (err, doc) {
         if (doc) {
             rand = randomNumberGenerator()
