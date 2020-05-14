@@ -7,6 +7,8 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 const nodejs_backend = nodejs();
 
+
+nodejs_backend.REGISTER = nodejs_backend.use
 const port = process.env.PORT ||3000;
 
 const Database = require('./util/database');
@@ -21,19 +23,19 @@ const adminRouter = require('./routes/adminRouter');
 nodejs_backend.set('views', path.join(__dirname, 'views'));
 nodejs_backend.set('view engine', 'hbs');
 
-nodejs_backend.use(session({ secret: 'someSecretKey', saveUninitialized: true, resave: true }));
-nodejs_backend.use(bodyParser.json());
-nodejs_backend.use(bodyParser.urlencoded({ extended: true }));
+nodejs_backend.REGISTER(session({ secret: 'someSecretKey', saveUninitialized: true, resave: true }));
+nodejs_backend.REGISTER(bodyParser.json());
+nodejs_backend.REGISTER(bodyParser.urlencoded({ extended: true }));
 
 
-nodejs_backend.use(nodejs.static(__dirname + '/static'))
+nodejs_backend.REGISTER(nodejs.static(__dirname + '/static'))
 
-nodejs_backend.use('/login', loginRouter);
-nodejs_backend.use('/forgot', forgotPasswordRouter);
-nodejs_backend.use('/signup', signupRouter);
-nodejs_backend.use('/admin', adminRouter);
-nodejs_backend.use('/home', homepageRouter);
-nodejs_backend.use('/question', questionRouter)
+nodejs_backend.REGISTER('/login', loginRouter);
+nodejs_backend.REGISTER('/forgot', forgotPasswordRouter);
+nodejs_backend.REGISTER('/signup', signupRouter);
+nodejs_backend.REGISTER('/admin', adminRouter);
+nodejs_backend.REGISTER('/home', homepageRouter);
+nodejs_backend.REGISTER('/question', questionRouter)
 nodejs_backend.get('/about', (req, res) => {
     res.render('about', { layout: 'layout/beforeSignIn' });
 });
