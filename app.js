@@ -15,7 +15,7 @@ const signupRouter = require('./routes/signupRouter');
 const homepageRouter = require('./routes/homeRouter');
 const forgotPasswordRouter = require('./routes/forgotPassRouter')
 const questionRouter = require('./routes/testRouter')
-
+const facultyRouter = require('./routes/facultyRouter');
 const adminRouter = require('./routes/adminRouter');
 
 app.set('views', path.join(__dirname, 'views'));
@@ -28,6 +28,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static(__dirname + '/static'))
 
+app.use('/faculty', facultyRouter);
 app.use('/login', loginRouter);
 app.use('/forgot', forgotPasswordRouter);
 app.use('/signup', signupRouter);
