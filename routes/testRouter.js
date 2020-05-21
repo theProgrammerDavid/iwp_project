@@ -6,6 +6,8 @@ const Offense = require('../models/Offense');
 const Question = require('../models/Question');
 const User = require('../models/User')
 const Score = require('../models/Score');
+let x = 0;
+
 
 function randomNumberGenerator() {
     var x = Math.floor((Math.random() * 100) + 1);
@@ -78,16 +80,14 @@ router.get('/make', async function (req, res) {
 })
 
 router.post('/', async function (req, res) {
-    console.log(req.body.testid);
-    console.log(req.body)
+    
 
     Question.findOne({ "Serial Number": req.body.number }).then(
         (q) => {
+            x = x + 1;
             if (q) {
-                console.log(q["Correct Answer"])
-                console.log(req.body.option)
+                console.log(x);
                 if (req.body.option == q["Correct Answer"]) {
-
                     positiveScore(req.session.email, 1, 1)
                     console.log("correct Answer")
                     //res.redirect('/home/test');
@@ -96,6 +96,10 @@ router.post('/', async function (req, res) {
             else {
                 console.log('q is null')
                 //res.redirect('/home/test');
+            }
+            
+            if(x>10){
+                res.redirect("/results/")
             }
             res.redirect('/home/test');
         })

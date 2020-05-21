@@ -9,7 +9,6 @@ const ScoreSchema = new Schema({
     },
     points: {
         type: Number,
-        
     },
     testid:String
 
