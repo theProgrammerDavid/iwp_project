@@ -6,6 +6,10 @@ const Question = require('../models/Question');
 const User = require('../models/User');
 const hashPassword = require('../util/hash')['hashPassword'];
 
+//var mongo_express = require('mongo-express/lib/middleware')
+//var mongo_express_config = require('../config')
+
+//router.use('/page', mongo_express(mongo_express_config))
 const adminPass = 'admin';
 
 router.get('/', function (req, res) {
